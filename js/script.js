@@ -85,7 +85,7 @@ function toggleFAQ(element) {
 
 
 
-<
+
   // Ensure tabs are functioning properly
   document.addEventListener('DOMContentLoaded', function () {
     var tabs = new bootstrap.Tab(document.querySelector('#section2-logo-design-tab'));
@@ -113,8 +113,27 @@ function toggleFAQ(element) {
   });
 
 
+  $('#customFile').on('change', function() {
+    let fileCount = $(this).get(0).files.length;
+    if (fileCount > 0) {
+      $(this).next('label').html(`${fileCount} file(s) selected`);
+    } else {
+      $(this).next('label').html(`<span>Add up to 5 files</span>`);
+    }
+  });
 
-
+  $(document).ready(function() {
+    // Hide the help button when the modal is shown
+    $('#helpModal').on('show.bs.modal', function () {
+      $('#helpButton').hide();
+    });
+  
+    // Show the help button when the modal is hidden
+    $('#helpModal').on('hidden.bs.modal', function () {
+      $('#helpButton').show();
+    });
+  });
+  
 
 
 

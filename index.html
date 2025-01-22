@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Logo Design</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,14 +49,21 @@
       </div>
     </div>
     <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="padding-bottom: 110px"
+      class="navbar navbar-expand-lg navbar-light"
+      style="
+        position: fixed;
+        top: 0;
+        
+        background-color: #fff;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        z-index: 99;
+        padding: 0;
+      "
     >
-      <div class="container" style="padding-top: 5px; width: 60%">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="Logo" width="200px" />
         </a>
-        <!-- Hamburger button for mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -67,24 +75,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Collapsible navbar content -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
-                style="font-size: 13px"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" style="font-size: 13px"
-                >About</a
-              >
+              <a class="nav-link" href="about.html">About</a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -101,45 +100,439 @@
                   <div class="row">
                     <!-- First column -->
                     <div class="col-6">
-                      <li><a class="dropdown-item" href="#">Service 1</a></li>
-                      <li><a class="dropdown-item" href="#">Service 2</a></li>
-                      <li><a class="dropdown-item" href="#">Service 3</a></li>
-                      <li><a class="dropdown-item" href="#">Service 4</a></li>
+                      <li
+                        style="
+                          color: #333;
+                          font-size: 17px;
+                          font-weight: 600;
+                          border-bottom: 2px solid #333;
+                          padding-bottom: 4px;
+                        "
+                      >
+                        Logo Design
+                      </li>
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="abstract-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          >Abstract Logo Design</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="combination-mark.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Combination Mark Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="emblem-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          >Emblem Logo Design</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="moscot-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Mascot Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="pictorial-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Pictorial Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="wordmark-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Wordmark Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="2D-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          2D Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="3D-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          3D Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="monogram-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Monogram Logo Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="animated-logo.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                          Animated Logo Design
+                        </a>
+                      </li>
                     </div>
                     <!-- Second column -->
                     <div class="col-6">
-                      <li><a class="dropdown-item" href="#">Service 5</a></li>
-                      <li><a class="dropdown-item" href="#">Service 6</a></li>
-                      <li><a class="dropdown-item" href="#">Service 7</a></li>
-                      <li><a class="dropdown-item" href="#">Service 8</a></li>
-                    </div>
+                        <li
+                          style="
+                            color: #333;
+                            font-size: 17px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #333;
+                            padding-bottom: 4px;
+                          "
+                        >
+                          Branding
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="buisness-cards.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                            >Buisness Cards</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="digital-branding.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                           Digital Branding
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="stationary-design.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                            >Stationery Design</a
+                          >
+                        </li>
+                        <li
+                          style="
+                            color: #333;
+                            font-size: 17px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #333;
+                            padding-bottom: 4px;
+                          "
+                        >
+                          Other Services
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="logo-animation.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Logo Animation
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="2D-illustration.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          2D Illustration
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="3D-illustration.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          3D Illustration
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="website-design.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Website Design
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="craeteive-copy.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Creative Copy Writing
+                          </a>
+                        </li>
+                        
+                      </div>
                   </div>
                 </div>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 13px">Packages</a>
+              <a class="nav-link" href="packages.html">Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 13px"
-                >Combo Packages</a
-              >
+              <a class="nav-link" href="combo-packages.html">Combo Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 13px">Showcase</a>
+              <a class="nav-link" href="showcase.html">Showcase</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" style="font-size: 13px"
-                >Contact</a
-              >
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 13px"
-                >+91 XXXXXXXXXX</a
-              >
+              <a class="nav-link" href="#">+91 XXXXXXXXXX</a>
             </li>
           </ul>
-          <a class="btn btn-primary ms-3" href="#">Get A Quote</a>
+          <a class="btn btn-primary ms-3" href="quote.html">Get A Quote</a>
         </div>
       </div>
     </nav>
@@ -169,9 +562,9 @@
           <!-- Column for Form (Right Side) -->
           <div class="col-md-5">
             <div class="consult-form" style="padding: 20px; border-radius: 8px">
-              <h4
+              <h4 class="form-head  "
                 style="
-                  font-size: 28px;
+                  
                   margin-bottom: 20px;
                   text-transform: uppercase;
                   font-weight: 700;
@@ -242,7 +635,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="count" >
       <div class="container-fluid num">
         <div class="row text-center">
           <div class="col-md-4 text-white" style="background-color: #272b34">
@@ -281,7 +674,7 @@
       </div>
     </section>
 
-    <section class="py-5">
+    <section  class=" home-about">
       <div class="container">
         <div class="row align-items-center">
           <!-- Text Section -->
@@ -310,10 +703,10 @@
               your brand's visibility and create an indelible mark.
             </p>
             <!-- Buttons -->
-            <div class="mt-4 d-flex pb-4">
+            <div class="mt-4  pb-4 ">
               <a
                 href="#"
-                class="btn btn-primary btn-lg chat-btn"
+                class="btn btn-primary btn-lg chat-btn chat-button "
                 style="
                   background-image: linear-gradient(
                     to right,
@@ -336,7 +729,7 @@
 
           <!-- Image Section -->
           <div class="col-md-5 text-center about-img">
-            <img src="images/about.svg" width="500px" alt="Illustration" />
+            <img src="images/about.svg"  alt="Illustration" />
           </div>
         </div>
       </div>
@@ -348,10 +741,10 @@
     >
       <section class="container">
         <div class="row align-items-center">
-          <h2
-            class="mb-4 text-center"
+          <h2 
+            class="mb-4 text-center "
             style="
-              font-size: 34px;
+             
               color: #333;
               line-height: 1;
               font-weight: 600;
@@ -362,7 +755,7 @@
           >
             Creative Logo Design Solutions for Your Brand
           </h2>
-          <div class="col-md-6">
+          <div class="col-md-6 d-none d-sm-block"">
             <div
               id="productCarousel"
               class="carousel slide"
@@ -410,7 +803,7 @@
                 </div>
               </div>
 
-              <!-- Carousel Controls (optional, can remove if not needed) -->
+              
             </div>
           </div>
 
@@ -521,93 +914,86 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="container py-4">
-        <ul class="list-unstyled d-flex">
-          <li class="row align-items-center mb-4">
-            <div class="main d-flex">
-              <div class="col-2 bouncy">
-                <img src="images/branding.svg" alt="Branding Icon" />
-              </div>
-              <div class="col-md-11 col-10" style="padding-left: 30px">
-                <h5 class="fw-bold text-black brand">Branding</h5>
-                <p class="mb-0 para" style="width: 85%">
-                  To develop a single and engaging brand identity that connects
-                  with your target market, use complete branding services.
-                </p>
-              </div>
+      <div class="col-lg-12">
+        <ul class="list-unstyled" >
+         
+          <li class="list-row row mb-4" >
+            <div class="col-md-2 col-3 lft lft-brand">
+              <img src="images/branding.svg" alt="Branding Icon"  />
+            </div>
+            <div class="col-md-10 col-9 ryt">
+              <h5 class="fw-bold text-dark">Branding</h5>
+              <p class="mb-0 text-secondary">
+                To develop a single and engaging brand identity that connects with
+                your target market, use complete branding services.
+              </p>
             </div>
           </li>
-
-          <li class="row align-items-center mb-4">
-            <div class="main d-flex">
-              <div class="col-2 bouncy">
-                <img src="images/web.svg" alt="Branding Icon" />
-              </div>
-              <div class="col-md-11 col-10" style="padding-left: 30px">
-                <h5 class="fw-bold text-black brand">Website Design</h5>
-                <p class="mb-0 para" style="width: 85%">
-                  User Friendly website designs that balance efficiency and
-                  appearance to provide an outstanding user experience.
-                </p>
-              </div>
+      
+          
+          <li class=" list-row row mb-4">
+            <div class="col-md-2 col-3 lft">
+              <img src="images/web.svg" alt="Branding Icon"  />
+            </div>
+            <div class="col-md-10 col-9 ryt">
+              <h5 class="fw-bold text-dark">Website Design</h5>
+              <p class="mb-0 text-secondary">
+                User Friendly website designs that balance efficiency and appearance to provide an outstanding user experience.</p>
             </div>
           </li>
-
-          <li class="row align-items-center mb-4">
-            <div class="main d-flex">
-              <div class="col-2 bouncy">
-                <img
-                  src="images/craetive.svg"
-                  alt="Creative Copywriting Icon"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-11 col-10" style="padding-left: 30px">
-                <h5 class="fw-bold text-black brand">Creative Copywriting</h5>
-                <p class="mb-0 para" style="width: 85%">
-                  Engaging and convincing copywriting that successfully conveys
-                  the message of your business and encourages engagement.
-                </p>
-              </div>
+      
+          
+          <li class=" list-row row mb-4" >
+            <div class="col-md-2 col-3 lft">
+              <img src="images/craetive.svg" alt="Branding Icon"  />
+            </div>
+            <div class="col-md-10 col-9 ryt">
+              <h5 class="fw-bold text-dark">Creative Copywriting</h5>
+              <p class="mb-0 text-secondary">
+                Engaging and convincing copywriting that successfully conveys the message of your business and encourages engagement. </p>
             </div>
           </li>
         </ul>
+      </div>
+        
       </section>
-      <section class="container py-5">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2 text-center">
-            <h2
-              style="
-                color: #333;
-                line-height: 1;
-                font-weight: 600;
-                padding: 0 0 15px;
-                position: relative;
-                letter-spacing: -1;
-              "
-            >
-              We are Excited about your idea
-            </h2>
-            <p
-              style="
-                font-size: 18px;
-                line-height: 1.6;
-                padding-bottom: 0;
-                font-weight: 400;
-                padding: 0 0 20px;
-              "
-            >
-              Getting a high-quality logo is essential for the success of your
-              brand. At A Logo Designs, we make sure you get outstanding value by
-              clear pricing for our logo design services. Find out how
-              affordable services matchup with your budget for best results.
-            </p>
-          </div>
-        </div>
-      </section>
+      
+      
+      
     </section>
+
+    <!-- <section class="container py-5">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2
+            style="
+              color: #333;
+              line-height: 1;
+              font-weight: 600;
+              padding: 0 0 15px;
+              position: relative;
+              letter-spacing: -1;
+            "
+          >
+            We are Excited about your idea
+          </h2>
+          <p
+            style="
+              font-size: 18px;
+              line-height: 1.6;
+              padding-bottom: 0;
+              font-weight: 400;
+              padding: 0 0 20px;
+            "
+          >
+            Getting a high-quality logo is essential for the success of your
+            brand. At A Logo Designs, we make sure you get outstanding value by
+            clear pricing for our logo design services. Find out how
+            affordable services matchup with your budget for best results.
+          </p>
+        </div>
+      </div>
+    </section> -->
 
     <div class="toggle py-5">
       <div class="container">
@@ -1246,12 +1632,12 @@
         background-size: cover;
       "
     >
-      <div class="container new-lead" style="width: 63%">
+      <div class="container new-lead">
         <h2
           class="text-center new-lead-title"
           style="
-            font-size: 35px;
-            width: 80%;
+            
+           
             margin: auto;
             padding: 0;
             color: #333;
@@ -1269,7 +1655,7 @@
           style="
             font-size: 18px;
             padding: 30px 0;
-            width: 65%;
+            /* width: 65%; */
             margin: auto;
             font-weight: 400;
             line-height: 22px;
@@ -1358,6 +1744,21 @@
               Website Design
             </button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link logo"
+              id="section2-blog-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#section2-blog"
+              type="button"
+              role="tab"
+              aria-controls="section2-blog"
+              aria-selected="false"
+              style="border: none; outline: none"
+            >
+              Content Writing
+            </button>
+          </li>
         </ul>
 
         <div class="tab-content" id="pills-tabContent-2">
@@ -1369,7 +1770,7 @@
             aria-labelledby="section2-logo-design-tab"
           >
             <ul class="tabs tabs-logo current pkg-sliders">
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+              <li  class="col-lg-4 col-md-6 col-sm-12 pkg-card"
                 style="
                   display: inline-block;
                   float: none;
@@ -1490,7 +1891,7 @@
                             color: #333;
                           "
                         >
-                          Add on: £20 for 24 Hours Rush Delivery
+                          Add on: $20 for 24 Hours Rush Delivery
                         </p>
                       </div>
                     </div>
@@ -1550,7 +1951,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
 
                   <div
                     class="headarea"
@@ -1697,13 +2098,13 @@
                   >
                 </div>
               </li>
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+              <li  class="col-lg-4 col-md-6 col-sm-12 pkg-card"
                 style="
                   display: inline-block;
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                  
+                 
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -1873,7 +2274,7 @@
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                  
+                 
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -1887,7 +2288,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
                   <div
                     class="headarea"
                     style="text-align: center; padding: 30px 20px 20px"
@@ -2570,7 +2971,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
 
                   <div
                     class="headarea"
@@ -3066,13 +3467,13 @@
             aria-labelledby="section2-illustration-tab"
           >
             <ul class="tabs tabs-logo current pkg-sliders">
-              <li  class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
                 style="
                   display: inline-block;
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                 
+                  
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -3246,7 +3647,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
 
                   <div
                     class="headarea"
@@ -3880,7 +4281,7 @@
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                 
+                  
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -4051,7 +4452,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
 
                   <div
                     class="headarea"
@@ -4197,7 +4598,7 @@
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                  
+                 
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -4796,14 +5197,14 @@
                     >View Details</a
                   >
                 </div>
-              </li>
+              </li> 
               <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
                 style="
                   display: inline-block;
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                 
+                  
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -4817,7 +5218,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
                   <div
                     class="headarea"
                     style="text-align: center; padding: 30px 20px 20px"
@@ -5113,7 +5514,7 @@
                   float: none;
                   height: 580px;
                   padding: 0 15px;
-                  
+                 
                   margin-bottom: 60px;
                   position: relative;
                 "
@@ -5127,7 +5528,7 @@
                     position: relative;
                   "
                 >
-                  <div class="badge">BEST SELLER</div>
+                  <div class="badge text-white">BEST SELLER</div>
                   <div
                     class="headarea"
                     style="text-align: center; padding: 30px 20px 20px"
@@ -5315,7 +5716,7 @@
                         font-weight: 600;
                       "
                     >
-                      Corporate Website Package
+                      Business Website Package
                     </h4>
                     <p
                       style="
@@ -5468,6 +5869,790 @@
               </li>
             </ul>
           </div>
+
+          <div
+            id="section2-blog"
+            class="tab-pane fade"
+            role="tabpanel"
+            aria-labelledby="section2-blog-tab"
+          >
+            <ul class="tabs tabs-logo current pkg-sliders">
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+                style="
+                  display: inline-block;
+                  float: none;
+                  height: 580px;
+                  padding: 0 15px;
+                  
+                  margin-bottom: 60px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="wrap"
+                  style="
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0 0 26px #0000001a;
+                    position: relative;
+                  "
+                >
+                  <div class="badge text-white">BEST SELLER</div>
+                  <div
+                    class="headarea"
+                    style="text-align: center; padding: 30px 20px 20px"
+                  >
+                    <h4
+                      style="
+                        color: #323637;
+                        font-size: 28px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                      "
+                    >
+                      Web Content Packages
+                    </h4>
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+                      "
+                    >
+                      Suitable for Personal and Professional Web Projects
+                    </p>
+                    <div class="details" style="padding: 30px 10px">
+                      <ul
+                        style="
+                          list-style: none;
+                          padding: 0;
+                          max-height: 150px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <div
+                          class="list-items"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            outline: 0;
+                            padding: 0 10px;
+                            direction: ltr;
+                          "
+                        >
+                          <li class="allitems1">250 Words per Page</li>
+                          <li class="allitems1">Timely Delivery</li>
+                          <li class="allitems1">Superior Standard Content</li>
+                          <li class="allitems1">
+                            Professional Industry Specific Writers
+                          </li>
+                          <li class="allitems1">100% Satisfaction Guarantee</li>
+                          <li class="allitems1">100% Money Back Guarantee *</li>
+                          <li class="allitems1">100% Ownership Rights</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="price"
+                      style="padding: 10px 10px 50px; display: flex"
+                    >
+                      <div class="left-price" style="width: 48%; float: left">
+                        <h4
+                          style="
+                            color: #20cb98;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding-bottom: 0;
+                          "
+                        >
+                          <strong style="font-weight: 400; font-size: 22px"
+                            >$</strong
+                          >
+                          70.00
+                        </h4>
+                      </div>
+                      <div
+                        class="ryt-desc"
+                        style="width: 54%; text-align: right; float: right"
+                      >
+                        <p
+                          style="
+                            line-height: 1.4;
+                            text-align: right;
+                            font-weight: 500;
+                            font-size: 13px;
+                            padding: 0;
+                            width: 100%;
+                            margin: auto;
+                            color: #333;
+                          "
+                        >
+                          Add on: $20 for 24 Hours Rush Delivery
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pkg-btn"
+                  style="
+                    margin-top: -30px;
+                    text-align: center;
+                    clear: both;
+                    z-index: 9;
+                    padding-bottom: 10px;
+                  "
+                >
+                  <a
+                    href=""
+                    style="
+                      background-color: #20cb98;
+                      border-radius: 30px;
+                      color: #fff;
+                      display: inline-block;
+                      border: 1px solid white;
+                      transition: 0.4s;
+                      padding: 14px 50px;
+                      font-weight: 700;
+                      font-size: 16px;
+                      text-decoration: none;
+                    "
+                    >Buy Your Plan</a
+                  >
+                </div>
+                <div class="view-btn text-center">
+                  <a href="" style="text-decoration: none; color: #333"
+                    >View Details</a
+                  >
+                </div>
+              </li>
+
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+                style="
+                  display: inline-block;
+                  float: none;
+                  height: 580px;
+                  padding: 0 15px;
+                  
+                  margin-bottom: 60px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="wrap"
+                  style="
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0 0 26px #0000001a;
+                    position: relative;
+                  "
+                >
+                  <div
+                    class="headarea"
+                    style="text-align: center; padding: 30px 20px 20px"
+                  >
+                    <h4
+                      style="
+                        color: #323637;
+                        font-size: 28px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                      "
+                    >
+                      Article Writing Packages
+                    </h4>
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+                      "
+                    >
+                      Suitable for Off-Site and On-Site article posting
+                    </p>
+                    <div class="details" style="padding: 30px 10px">
+                      <ul
+                        style="
+                          list-style: none;
+                          padding: 0;
+                          max-height: 150px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <div
+                          class="list-items"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            outline: 0;
+                            padding: 0 10px;
+                            direction: ltr;
+                          "
+                        >
+                          <li class="allitems">300 Words per Page</li>
+                          <li class="allitems">Timely Delivery</li>
+                          <li class="allitems">Superior Standard Content</li>
+                          <li class="allitems">Professional Writers</li>
+                          <li class="allitems">100% Satisfaction Guarantee</li>
+                          <li class="allitems">100% Money Back Guarantee</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="price"
+                      style="padding: 10px 10px 50px; display: flex"
+                    >
+                      <div class="left-price" style="width: 48%; float: left">
+                        <h4
+                          style="
+                            color: #f85649;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding-bottom: 0;
+                          "
+                        >
+                          <strong style="font-weight: 400; font-size: 22px"
+                            >$</strong
+                          >
+                          40.00
+                        </h4>
+                      </div>
+                      <div
+                        class="ryt-desc"
+                        style="width: 54%; text-align: right; float: right"
+                      >
+                        <p
+                          style="
+                            line-height: 1.4;
+                            text-align: right;
+                            font-weight: 500;
+                            font-size: 13px;
+                            padding: 0;
+                            width: 100%;
+                            margin: auto;
+                            color: #333;
+                          "
+                        >
+                          Add on: $20 for 24 Hours Rush Delivery
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pkg-btn"
+                  style="
+                    margin-top: -30px;
+                    text-align: center;
+                    clear: both;
+                    z-index: 9;
+                    padding-bottom: 10px;
+                  "
+                >
+                  <a
+                    href=""
+                    style="
+                      background-color: #f85649;
+                      border-radius: 30px;
+                      color: #fff;
+                      display: inline-block;
+                      border: 1px solid white;
+                      transition: 0.4s;
+                      padding: 14px 50px;
+                      font-weight: 700;
+                      font-size: 16px;
+                      text-decoration: none;
+                    "
+                    >Buy Your Plan</a
+                  >
+                </div>
+                <div class="view-btn text-center">
+                  <a href="" style="text-decoration: none; color: #333"
+                    >View Details</a
+                  >
+                </div>
+              </li>
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+                style="
+                  display: inline-block;
+                  float: none;
+                  height: 580px;
+                  padding: 0 15px;
+                  
+                  margin-bottom: 60px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="wrap"
+                  style="
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0 0 26px #0000001a;
+                    position: relative;
+                  "
+                >
+                  <div
+                    class="headarea"
+                    style="text-align: center; padding: 30px 20px 20px"
+                  >
+                    <h4
+                      style="
+                        color: #323637;
+                        font-size: 28px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                      "
+                    >
+                      Creative Writing Packages
+                    </h4>
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+                      "
+                    >
+                      Suitable for clients seeking Innovative Content
+                    </p>
+                    <div class="details" style="padding: 30px 10px">
+                      <ul
+                        style="
+                          list-style: none;
+                          padding: 0;
+                          max-height: 150px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <div
+                          class="list-items"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            outline: 0;
+                            padding: 0 10px;
+                            direction: ltr;
+                          "
+                        >
+                          <li class="allitems2">250 Words per Page</li>
+                          <li class="allitems2">Timely Delivery</li>
+                          <li class="allitems2">Superior Standard Content</li>
+                          <li class="allitems2">
+                            Professional Industry Specific Writers
+                          </li>
+                          <li class="allitems2">100% Satisfaction Guarantee</li>
+                          <li class="allitems2">100% Money Back Guarantee</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="price"
+                      style="padding: 10px 10px 50px; display: flex"
+                    >
+                      <div class="left-price" style="width: 48%; float: left">
+                        <h4
+                          style="
+                            color: #488cfb;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding-bottom: 0;
+                          "
+                        >
+                          <strong style="font-weight: 400; font-size: 22px"
+                            >$</strong
+                          >
+                          75.00
+                        </h4>
+                      </div>
+                      <div
+                        class="ryt-desc"
+                        style="width: 54%; text-align: right; float: right"
+                      >
+                        <p
+                          style="
+                            line-height: 1.4;
+                            text-align: right;
+                            font-weight: 500;
+                            font-size: 13px;
+                            padding: 0;
+                            width: 100%;
+                            margin: auto;
+                            color: #333;
+                          "
+                        >
+                          Add on: $20 for 24 Hours Rush Delivery
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pkg-btn"
+                  style="
+                    margin-top: -30px;
+                    text-align: center;
+                    clear: both;
+                    z-index: 9;
+                    padding-bottom: 10px;
+                  "
+                >
+                  <a
+                    href=""
+                    style="
+                      background-color: #488cfb;
+                      border-radius: 30px;
+                      color: #fff;
+                      display: inline-block;
+                      border: 1px solid white;
+                      transition: 0.4s;
+                      padding: 14px 50px;
+                      font-weight: 700;
+                      font-size: 16px;
+                      text-decoration: none;
+                    "
+                    >Buy Your Plan</a
+                  >
+                </div>
+                <div class="view-btn text-center">
+                  <a href="" style="text-decoration: none; color: #333"
+                    >View Details</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <ul class="tabs tabs-logo current pkg-sliders">
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+                style="
+                  display: inline-block;
+                  float: none;
+                  height: 580px;
+                  padding: 0 15px;
+                 
+                  margin-bottom: 60px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="wrap"
+                  style="
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0 0 26px #0000001a;
+                    position: relative;
+                  "
+                >
+                  <div
+                    class="headarea"
+                    style="text-align: center; padding: 30px 20px 20px"
+                  >
+                    <h4
+                      style="
+                        color: #323637;
+                        font-size: 28px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                      "
+                    >
+                      Blog Writing Packages
+                    </h4>
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+                      "
+                    >
+                      Suitable for Personal and Corporate Blog Projects
+                    </p>
+                    <div class="details" style="padding: 30px 10px">
+                      <ul
+                        style="
+                          list-style: none;
+                          padding: 0;
+                          max-height: 150px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <div
+                          class="list-items"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            outline: 0;
+                            padding: 0 10px;
+                            direction: ltr;
+                          "
+                        >
+                          <li class="allitems">250 Words per Page</li>
+                          <li class="allitems">Timely Delivery</li>
+                          <li class="allitems">Superior Standard Content</li>
+                          <li class="allitems">Professional Writers</li>
+                          <li class="allitems">100% Satisfaction Guarantee</li>
+                          <li class="allitems">100% Money Back Guarantee</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="price"
+                      style="padding: 10px 10px 50px; display: flex"
+                    >
+                      <div class="left-price" style="width: 48%; float: left">
+                        <h4
+                          style="
+                            color: #f85649;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding-bottom: 0;
+                          "
+                        >
+                          <strong style="font-weight: 400; font-size: 22px"
+                            >$</strong
+                          >
+                          40.00
+                        </h4>
+                      </div>
+                      <div
+                        class="ryt-desc"
+                        style="width: 54%; text-align: right; float: right"
+                      >
+                        <p
+                          style="
+                            line-height: 1.4;
+                            text-align: right;
+                            font-weight: 500;
+                            font-size: 13px;
+                            padding: 0;
+                            width: 100%;
+                            margin: auto;
+                            color: #333;
+                          "
+                        >
+                          Add on: £20 for 24 Hours Rush Delivery
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pkg-btn"
+                  style="
+                    margin-top: -30px;
+                    text-align: center;
+                    clear: both;
+                    z-index: 9;
+                    padding-bottom: 10px;
+                  "
+                >
+                  <a
+                    href=""
+                    style="
+                      background-color: #f85649;
+                      border-radius: 30px;
+                      color: #fff;
+                      display: inline-block;
+                      border: 1px solid white;
+                      transition: 0.4s;
+                      padding: 14px 50px;
+                      font-weight: 700;
+                      font-size: 16px;
+                      text-decoration: none;
+                    "
+                    >Buy Your Plan</a
+                  >
+                </div>
+                <div class="view-btn text-center">
+                  <a href="" style="text-decoration: none; color: #333"
+                    >View Details</a
+                  >
+                </div>
+              </li>
+              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
+                style="
+                  display: inline-block;
+                  float: none;
+                  height: 580px;
+                  padding: 0 15px;
+                  
+                  margin-bottom: 60px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="wrap"
+                  style="
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0 0 26px #0000001a;
+                    position: relative;
+                  "
+                >
+                  <div
+                    class="headarea"
+                    style="text-align: center; padding: 30px 20px 20px"
+                  >
+                    <h4
+                      style="
+                        color: #323637;
+                        font-size: 28px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                      "
+                    >
+                      Infographics Packages
+                    </h4>
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+                      "
+                    >
+                      Suitable for Personal and Corporate Marketing Projects
+                    </p>
+                    <div class="details" style="padding: 30px 10px">
+                      <ul
+                        style="
+                          list-style: none;
+                          padding: 0;
+                          max-height: 150px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <div
+                          class="list-items"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            outline: 0;
+                            padding: 0 10px;
+                            direction: ltr;
+                          "
+                        >
+                          <li class="allitems2">120 Words per Infographic</li>
+                          <li class="allitems2">Timely Delivery</li>
+                          <li class="allitems2">Superior Standard Content</li>
+                          <li class="allitems2">Professional Writers</li>
+                          <li class="allitems2">100% Satisfaction Guarantee</li>
+                          <li class="allitems2">100% Money Back Guarantee</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="price"
+                      style="padding: 10px 10px 50px; display: flex"
+                    >
+                      <div class="left-price" style="width: 48%; float: left">
+                        <h4
+                          style="
+                            color: #488cfb;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding-bottom: 0;
+                          "
+                        >
+                          <strong style="font-weight: 400; font-size: 22px"
+                            >$</strong
+                          >
+                          200.00
+                        </h4>
+                      </div>
+                      <div
+                        class="ryt-desc"
+                        style="width: 54%; text-align: right; float: right"
+                      >
+                        <p
+                          style="
+                            line-height: 1.4;
+                            text-align: right;
+                            font-weight: 500;
+                            font-size: 13px;
+                            padding: 0;
+                            width: 100%;
+                            margin: auto;
+                            color: #333;
+                          "
+                        >
+                          Add on: $20 for 24 Hours Rush Delivery
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pkg-btn"
+                  style="
+                    margin-top: -30px;
+                    text-align: center;
+                    clear: both;
+                    z-index: 9;
+                    padding-bottom: 10px;
+                  "
+                >
+                  <a
+                    href=""
+                    style="
+                      background-color: #488cfb;
+                      border-radius: 30px;
+                      color: #fff;
+                      display: inline-block;
+                      border: 1px solid white;
+                      transition: 0.4s;
+                      padding: 14px 50px;
+                      font-weight: 700;
+                      font-size: 16px;
+                      text-decoration: none;
+                    "
+                    >Buy Your Plan</a
+                  >
+                </div>
+                <div class="view-btn text-center">
+                  <a href="" style="text-decoration: none; color: #333"
+                    >View Details</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -5513,7 +6698,7 @@
                   align-items: center;
                 "
               >
-                <li
+                <li  class="responsive-item"
                   style="
                     border-radius: 10px 0 0;
                     border: 1px solid #bbbecc;
@@ -5540,7 +6725,7 @@
                     Consultants
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-top: 1px solid #bbbecc;
                     border-bottom: 1px solid #bbbecc;
@@ -5566,7 +6751,7 @@
                     Fortune 500 companies
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-radius: 0 10px 0 0;
                     border: 1px solid #bbbecc;
@@ -5593,7 +6778,7 @@
                     Retail
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-right: 1px solid #bbbecc;
                     border-left: 1px solid #bbbecc;
@@ -5620,7 +6805,7 @@
                     Tech companies
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     float: left;
                     padding: 20px 35px;
@@ -5644,7 +6829,7 @@
                     Financial advisors
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-left: 1px solid #bbbecc;
                     border-right: 1px solid #bbbecc;
@@ -5670,7 +6855,7 @@
                     Nonprofits
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-left: 1px solid #bbbecc;
                     border-right: 1px solid #bbbecc;
@@ -5697,7 +6882,7 @@
                     Small businesses
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-top: 1px solid #bbbecc;
                     float: left;
@@ -5722,7 +6907,7 @@
                     Real-estate agents
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-left: 1px solid #bbbecc;
                     border-right: 1px solid #bbbecc;
@@ -5749,7 +6934,7 @@
                     Service based
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border: 1px solid #bbbecc;
                     float: left;
@@ -5775,7 +6960,7 @@
                     Start ups
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-top: 1px solid #bbbecc;
                     border-bottom: 1px solid #bbbecc;
@@ -5801,7 +6986,7 @@
                     Financial advisors
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border: 1px solid #bbbecc;
                     border-bottom: 1px solid #bbbecc;
@@ -5827,7 +7012,7 @@
                     Restaurants
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-left: 1px solid #bbbecc;
                     border-right: 1px solid #bbbecc;
@@ -5854,7 +7039,7 @@
                     Manufacturers
                   </p>
                 </li>
-                <li
+                <li  class="responsive-item"
                   style="
                     border-bottom: 1px solid #bbbecc;
                     float: left;
@@ -5879,7 +7064,7 @@
                     Medical professionals
                   </p>
                 </li>
-                <li
+                <li class="responsive-item"
                   style="
                     border: 1px solid #bbbecc;
                     border-top: none;
@@ -5972,8 +7157,8 @@
       </div>
     </section>
 
-    <section style="padding: 60px 0 0px 0; background: #f7f9fc">
-      <div class="container text-center py-5" style="width: 60%">
+    <section style=" background: #f7f9fc">
+      <div class="container text-center py-5" >
         <div class="row" style="padding: 75px 0 0 0">
           <div class="col-lg-4" style="padding: 0 40px; text-align: center">
             <div class="icon-wrapper icon1" style="margin: 0 0 1rem">
@@ -6125,7 +7310,7 @@
           </div>
         </div>
         <section class="swiper">
-          <div class="slider-wrapper"  style="overflow: hidden; max-width: 1200px;margin: 20px 70px 55px; ">
+          <div class="slider-wrapper"  style="overflow: hidden; max-width: 1200px; ">
             
             <div
               class="card-list swiper-wrapper"
@@ -6154,7 +7339,53 @@
                   "
                   >JV</span
                 >
-                <h4
+                <h4 class="testimonial-head"
+                  style="
+                    
+                    font-weight: 700;
+                    padding: 20px 0 0;
+                    color: #222;
+                  "
+                >
+                  John Vanderbeck, Business Owner
+                </h4>
+                <p class="testimonial-para"
+                  style="
+                    font-weight: 400;
+                    line-height: 22px;
+                    padding: 0 0 20px;
+                    
+                  "
+                >
+                  in helping me build over 10+ logos for my clients in just 1
+                  Day. I highly recommend the service to anyone who is looking
+                  to get great design options at a great price point.
+                </p>
+              </div>
+              <div class="card-item swiper-slide">
+                <span
+                  style="
+                    color: #fff;
+                    padding: 14px 0 0;
+                    display: inline-block;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+                    background-image: linear-gradient(
+                      to right,
+                      #8335d6,
+                      #b00fb3,
+                      #c7008f,
+                      #cf006e,
+                      #cd2153
+                    );
+                  "
+                  >JV</span
+                >
+                <h4 class="testimonial-head"
                   style="
                     font-size: 22px;
                     font-weight: 700;
@@ -6164,7 +7395,7 @@
                 >
                   John Vanderbeck, Business Owner
                 </h4>
-                <p
+                <p class="testimonial-para"
                   style="
                     font-weight: 400;
                     line-height: 22px;
@@ -6200,7 +7431,7 @@
                   "
                   >JV</span
                 >
-                <h4
+                <h4 class="testimonial-head"
                   style="
                     font-size: 22px;
                     font-weight: 700;
@@ -6210,7 +7441,7 @@
                 >
                   John Vanderbeck, Business Owner
                 </h4>
-                <p
+                <p class="testimonial-para"
                   style="
                     font-weight: 400;
                     line-height: 22px;
@@ -6246,7 +7477,7 @@
                   "
                   >JV</span
                 >
-                <h4
+                <h4 class="testimonial-head"
                   style="
                     font-size: 22px;
                     font-weight: 700;
@@ -6256,7 +7487,7 @@
                 >
                   John Vanderbeck, Business Owner
                 </h4>
-                <p
+                <p class="testimonial-para"
                   style="
                     font-weight: 400;
                     line-height: 22px;
@@ -6292,7 +7523,7 @@
                   "
                   >JV</span
                 >
-                <h4
+                <h4 class="testimonial-head"
                   style="
                     font-size: 22px;
                     font-weight: 700;
@@ -6302,53 +7533,7 @@
                 >
                   John Vanderbeck, Business Owner
                 </h4>
-                <p
-                  style="
-                    font-weight: 400;
-                    line-height: 22px;
-                    padding: 0 0 20px;
-                    font-size: 14px;
-                  "
-                >
-                  in helping me build over 10+ logos for my clients in just 1
-                  Day. I highly recommend the service to anyone who is looking
-                  to get great design options at a great price point.
-                </p>
-              </div>
-              <div class="card-item swiper-slide">
-                <span
-                  style="
-                    color: #fff;
-                    padding: 14px 0 0;
-                    display: inline-block;
-                    border-radius: 50%;
-                    box-sizing: border-box;
-                    font-size: 16px;
-                    height: 50px;
-                    width: 50px;
-                    text-align: center;
-                    background-image: linear-gradient(
-                      to right,
-                      #8335d6,
-                      #b00fb3,
-                      #c7008f,
-                      #cf006e,
-                      #cd2153
-                    );
-                  "
-                  >JV</span
-                >
-                <h4
-                  style="
-                    font-size: 22px;
-                    font-weight: 700;
-                    padding: 20px 0 0;
-                    color: #222;
-                  "
-                >
-                  John Vanderbeck, Business Owner
-                </h4>
-                <p
+                <p class="testimonial-para"
                   style="
                     font-weight: 400;
                     line-height: 22px;
@@ -6373,10 +7558,10 @@
     <section
       style="position: relative; padding: 60px 0; z-index: 1; background: #fff"
     >
-      <div class="container" style="width: 60%">
+      <div class="container" >
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="txt">
+            <div class="txt ">
               <h2
                 style="
                   color: #333;
@@ -6390,9 +7575,9 @@
                 Discuss with our Experts & Choose the Best Solution
               </h2>
 
-              <p
+              <p class="home-para"
                 style="
-                  font-size: 18px;
+                  
                   line-height: 1.6;
                   padding-top: 20px;
                   font-weight: 400;
@@ -6418,7 +7603,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6" style="padding-left: 50px">
+          <div class="col-lg-6" >
             <div class="form">
               <form action="">
                 <div class="row">
@@ -6550,12 +7735,12 @@
                     </div>
                   </div>
                   <div class="col-lg-12">
-                    <textarea
+                    <textarea class="home-text"
                       name=""
                       id=""
                       placeholder="I need a ... logo"
                       style="
-                        width: 80%;
+                        
                         margin: 0;
                         padding: 8px 12px;
                         height: 100px;
@@ -6572,7 +7757,7 @@
                     ></textarea>
                   </div>
                   <div class="col-lg-12">
-                    <button
+                    <button class="home-text"
                       style="
                         border: none;
                         margin-top: 10px;
@@ -6993,6 +8178,44 @@
           </div>
         </div>
       </div>
+      <div class="help-button" id="helpButton" data-toggle="modal" data-target="#helpModal">
+        <i class="fas fa-question-circle"></i> Help
+      </div>
+      
+      <div class="modal fade modal-right" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h5 class="modal-title" id="helpModalLabel">Leave us a message</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="help-label">Your name (optional)</label>
+                  <input type="text" class="form-control help-input" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="help-label">Email address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="help-label help-message">How can we help you?</label>
+                  <textarea class="form-control" id="message" rows="4" style="resize: none;"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="background-color: rgb(47, 57, 65) !important; color: rgb(255, 255, 255) !important; border-color: rgb(47, 57, 65) !important;">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </section>
 
     <!-- <script src="js/popper.min.js"></script> -->
@@ -7000,7 +8223,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
-
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
