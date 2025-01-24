@@ -77,57 +77,280 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
-        z-index: 99;
-        padding: 0;
-      "
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="Logo" width="200px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+    class="navbar navbar-expand-lg navbar-light"
+    style="
+      position: fixed;
+      top: 0;
+      
+      background-color: #fff;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+      z-index: 99;
+      padding: 0;
+    "
+  >
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" width="200px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="w3_open()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="dropdown-content">
-                  <div class="row">
-                    <!-- First column -->
-                    <div class="col-6">
+          <li class="nav-item dropdown large">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-content">
+                <div class="row">
+                 
+                  <div class="col-6">
+                    <li
+                      style="
+                        color: #333;
+                        font-size: 17px;
+                        font-weight: 600;
+                        border-bottom: 2px solid #333;
+                        padding-bottom: 4px;
+                      "
+                    >
+                      Logo Design
+                    </li>
+                    <li class="serv">
+                      <a
+                        class="dropdown-item"
+                        href="abstract-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                        >Abstract Logo Design</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="combination-mark.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Combination Mark Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="emblem-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                        >Emblem Logo Design</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="moscot-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Mascot Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pictorial-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Pictorial Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="wordmark-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Wordmark Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="2D-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        2D Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="3D-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        3D Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="monogram-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Monogram Logo Design
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="animated-logo.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                      >
+                        Animated Logo Design
+                      </a>
+                    </li>
+                  </div>
+                  
+                  <div class="col-6">
                       <li
                         style="
                           color: #333;
@@ -137,32 +360,256 @@
                           padding-bottom: 4px;
                         "
                       >
-                        Logo Design
+                        Branding
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="buisness-cards.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          >Buisness Cards</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="digital-branding.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                         Digital Branding
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="stationary-design.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          >Stationery Design</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          color: #333;
+                          font-size: 17px;
+                          font-weight: 600;
+                          border-bottom: 2px solid #333;
+                          padding-bottom: 4px;
+                        "
+                      >
+                        Other Services
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="logo-animation.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Logo Animation
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="2D-illustration.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        2D Illustration
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="3D-illustration.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        3D Illustration
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="website-design.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Website Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="craeteive-copy.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Creative Copy Writing
+                        </a>
+                      </li>
+                      
+                    </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown mobile">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-content">
+                <div class="row">
+                  
+                  <div class="col-6">
+                   
+                    <li class="serv">
+                      <a
+                        class="dropdown-item"
+                        href="logo-design.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                        > Logo Design</a
+                      >
+                    </li>
+                  </div>
+                  
+                  <div class="col-6">
+                     <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="logo-animation.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Logo Animation
+                        </a>
                       </li>
                       <li class="serv">
                         <a
                           class="dropdown-item"
-                          href="abstract-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                          >Abstract Logo Design</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="combination-mark.html"
+                          href="2D-illustration.html"
                           style="
                             padding: 4px 0;
                             display: block;
@@ -177,33 +624,13 @@
                             font-size: 14px;
                           "
                         >
-                          Combination Mark Logo Design
+                        2D Illustration
                         </a>
                       </li>
-                      <li>
+                      <li class="serv" >
                         <a
                           class="dropdown-item"
-                          href="emblem-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                          >Emblem Logo Design</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="moscot-logo.html"
+                          href="digital-branding.html"
                           style="
                             padding: 4px 0;
                             display: block;
@@ -218,13 +645,13 @@
                             font-size: 14px;
                           "
                         >
-                          Mascot Logo Design
+                        Branding
                         </a>
                       </li>
-                      <li>
+                      <li class="serv">
                         <a
                           class="dropdown-item"
-                          href="pictorial-logo.html"
+                          href="website-design.html"
                           style="
                             padding: 4px 0;
                             display: block;
@@ -239,13 +666,13 @@
                             font-size: 14px;
                           "
                         >
-                          Pictorial Logo Design
+                        Website Design
                         </a>
                       </li>
-                      <li>
+                      <li class="serv">
                         <a
                           class="dropdown-item"
-                          href="wordmark-logo.html"
+                          href="craeteive-copy.html"
                           style="
                             padding: 4px 0;
                             display: block;
@@ -260,310 +687,37 @@
                             font-size: 14px;
                           "
                         >
-                          Wordmark Logo Design
+                        Creative Copy Writing
                         </a>
                       </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="2D-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                        >
-                          2D Logo Design
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="3D-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                        >
-                          3D Logo Design
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="monogram-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                        >
-                          Monogram Logo Design
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="animated-logo.html"
-                          style="
-                            padding: 4px 0;
-                            display: block;
-                            width: 100%;
-                            clear: both;
-                            font-weight: 400;
-                            color: #cc007c;
-                            text-align: inherit;
-                            white-space: nowrap;
-                            background-color: transparent;
-                            border: 0;
-                            font-size: 14px;
-                          "
-                        >
-                          Animated Logo Design
-                        </a>
-                      </li>
+                      
                     </div>
-                    <!-- Second column -->
-                    <div class="col-6">
-                        <li
-                          style="
-                            color: #333;
-                            font-size: 17px;
-                            font-weight: 600;
-                            border-bottom: 2px solid #333;
-                            padding-bottom: 4px;
-                          "
-                        >
-                          Branding
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="buisness-cards.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                            >Buisness Cards</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="digital-branding.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                           Digital Branding
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="stationary-design.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                            >Stationery Design</a
-                          >
-                        </li>
-                        <li
-                          style="
-                            color: #333;
-                            font-size: 17px;
-                            font-weight: 600;
-                            border-bottom: 2px solid #333;
-                            padding-bottom: 4px;
-                          "
-                        >
-                          Other Services
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="logo-animation.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                          Logo Animation
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="2D-illustration.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                          2D Illustration
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="3D-illustration.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                          3D Illustration
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="website-design.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                          Website Design
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="craeteive-copy.html"
-                            style="
-                              padding: 4px 0;
-                              display: block;
-                              width: 100%;
-                              clear: both;
-                              font-weight: 400;
-                              color: #cc007c;
-                              text-align: inherit;
-                              white-space: nowrap;
-                              background-color: transparent;
-                              border: 0;
-                              font-size: 14px;
-                            "
-                          >
-                          Creative Copy Writing
-                          </a>
-                        </li>
-                        
-                      </div>
-                  </div>
                 </div>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="packages.html">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="combo-packages.html">Combo Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="showcase.html">Showcase</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">+91 XXXXXXXXXX</a>
-            </li>
-          </ul>
-          <a class="btn btn-primary ms-3" href="quote.html">Get A Quote</a>
-        </div>
+              </div>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="combo-packages.html">Combo Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="showcase.html">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item number">
+            <a class="nav-link " href="#">+91 XXXXXXXXXX</a>
+          </li>
+        </ul>
+        <a class="btn btn-primary ms-3 quote-button" href="quote.html">Get A Quote</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <section
       class="contact"
@@ -1161,317 +1315,108 @@
       </div>
     </section>
 
-    <section style="padding: 0; background: url('./images/footer-bg.png')">
+    <section style="padding: 0; background: url('./images/footer-bg.png') ;overflow-x: hidden;">
       <div class="footer-top">
-        <div class="container" style="width: 60%">
+        <div class="container" >
           <div class="row">
             <div class="col-lg-6">
               <div class="fleft" style="padding: 42px 0 10px">
                 <img
                   src="images/logo.png"
                   alt=""
+                  class="footer-logo"
                   style="width: 200px; vertical-align: middle; cursor: pointer"
                 />
                 <br />
-                <a href=""
-                  ><img
-                    src="images/dmca.png"
-                    alt=""
+                <div class="footer-images">
+                  <a href="">
+                    <img
+                      src="images/dmca.png"
+                      alt=""
+                      style="
+                        padding-top: 15px;
+                        border: 0;
+                        outline: 0;
+                        vertical-align: middle;
+                      "
+                    />
+                  </a>
+                  <img
+                    src="images/verified.png"
                     style="
                       padding-top: 15px;
                       border: 0;
                       outline: 0;
                       vertical-align: middle;
+                      cursor: pointer;
+                      max-width: 50px;
+                      margin-left: 20px;
                     "
-                /></a>
-                <img
-                  src="images/verified.png"
-                  style="
-                    padding-top: 15px;
-                    border: 0;
-                    outline: 0;
-                    vertical-align: middle;
-                    cursor: pointer;
-                    max-width: 50px;
-                    margin-left: 20px;
-                  "
-                  alt=""
-                />
-                <img
-                  src="images/uk.png"
-                  alt=""
-                  width="10%"
-                  style="margin-left: 1rem !important; cursor: pointer"
-                />
+                    alt=""
+                  />
+                  <img
+                    src="images/uk.png"
+                    alt=""
+                    width="10%"
+                    style="margin-left: 1rem !important; cursor: pointer"
+                  />
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div style="display: inline-block; width: 100%; padding: 40px 0">
-                <ul style="text-align: right; margin: 12px 0; width: 100%">
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >About Us</a
-                    >
+              <div class="footer-links" style="padding: 40px 0">
+                <ul class="link-list" >
+                  <li class="flist" style="display: inline-block; ">
+                    <a style="color: #fff; text-decoration: none;" href="about.html">About Us</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Packages</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="packages.html">Packages</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Showcase</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="showcase.html">Showcase</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Contact Us</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    text-align: center;
-
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    list-style-type: none;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
-                      <i
-                        class="fa-solid fa-phone"
-                        style="font-size: 13px; padding-right: 5px"
-                      ></i>
+      
+                <ul class="contact-info">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;"  >
+                      <i class="fa-solid fa-phone"></i>
                       +91 XXXXXXXXXX
                     </a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    text-align: center;
-                    list-style-type: none;
-                    font-size: 14px;
-                    font-size: 18px;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+      
+                <ul class="social-links">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-facebook"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-twitter"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-pinterest"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
-
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
@@ -1481,73 +1426,63 @@
           </div>
         </div>
       </div>
+      
       <div class="footer-botttom" style="background: #222328; padding: 10px 0">
         <div class="container" style="width: 60%">
           <div class="row align-items-center">
             <div class="col-sm-8">
-              <p
-                style="
-                  font-size: 12px;
-                  color: #fff;
-                  margin: 0;
-                  padding: 10px 0;
-                  font-weight: 400;
-                  line-height: 22px;
-                "
-              >
+              <p class="footer-copyright">
                 @ A Logo Design 2025 | All rights reserved
               </p>
             </div>
             <div class="col-sm-4">
-              <ul style="margin: 10px 0; float: right; list-style-type: none">
-                <li
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Terms of Services</a
-                  >
-                </li>
-                <li
-                  class="privacy"
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Privacy Policy</a
-                  >
-                </li>
+              <ul class="footer-bottom-links">
+                <li><a href="" style="color: #fff; text-decoration: none;">Terms of Services  |</a></li>
+                <li class="privacy" ><a href="" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="help-button" id="helpButton" data-toggle="modal" data-target="#helpModal">
+        <i class="fas fa-question-circle"></i> Help
+      </div>
+      
+      <div class="modal fade modal-right" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h5 class="modal-title" id="helpModalLabel">Leave us a message</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="help-label">Your name (optional)</label>
+                  <input type="text" class="form-control help-input" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="help-label">Email address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="help-label help-message">How can we help you?</label>
+                  <textarea class="form-control" id="message" rows="4" style="resize: none;"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="background-color: rgb(47, 57, 65) !important; color: rgb(255, 255, 255) !important; border-color: rgb(47, 57, 65) !important;">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </section>
 
     <script src="js/bootstrap.min.js"></script>

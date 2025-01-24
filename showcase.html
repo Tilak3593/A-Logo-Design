@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="js/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-- <link rel="stylesheet" href="css/intlTelInput.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <style>
       nav .navbar-nav {
         float: right;
@@ -36,7 +40,7 @@
     style="
       position: fixed;
       top: 0;
-      width: 100%;
+      
       background-color: #fff;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
       z-index: 99;
@@ -55,6 +59,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="w3_open()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,7 +72,7 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown large">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -81,7 +86,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="dropdown-content">
                 <div class="row">
-                  <!-- First column -->
+                 
                   <div class="col-6">
                     <li
                       style="
@@ -303,7 +308,7 @@
                       </a>
                     </li>
                   </div>
-                  <!-- Second column -->
+                  
                   <div class="col-6">
                       <li
                         style="
@@ -499,6 +504,159 @@
               </div>
             </ul>
           </li>
+          <li class="nav-item dropdown mobile">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-content">
+                <div class="row">
+                  
+                  <div class="col-6">
+                   
+                    <li class="serv">
+                      <a
+                        class="dropdown-item"
+                        href="logo-design.html"
+                        style="
+                          padding: 4px 0;
+                          display: block;
+                          width: 100%;
+                          clear: both;
+                          font-weight: 400;
+                          color: #cc007c;
+                          text-align: inherit;
+                          white-space: nowrap;
+                          background-color: transparent;
+                          border: 0;
+                          font-size: 14px;
+                        "
+                        > Logo Design</a
+                      >
+                    </li>
+                  </div>
+                  
+                  <div class="col-6">
+                     <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="logo-animation.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Logo Animation
+                        </a>
+                      </li>
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="2D-illustration.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        2D Illustration
+                        </a>
+                      </li>
+                      <li class="serv" >
+                        <a
+                          class="dropdown-item"
+                          href="digital-branding.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Branding
+                        </a>
+                      </li>
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="website-design.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Website Design
+                        </a>
+                      </li>
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="craeteive-copy.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                        >
+                        Creative Copy Writing
+                        </a>
+                      </li>
+                      
+                    </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+
           <li class="nav-item">
             <a class="nav-link" href="packages.html">Packages</a>
           </li>
@@ -511,14 +669,15 @@
           <li class="nav-item">
             <a class="nav-link " href="contact.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">+91 XXXXXXXXXX</a>
+          <li class="nav-item number">
+            <a class="nav-link " href="#">+91 XXXXXXXXXX</a>
           </li>
         </ul>
-        <a class="btn btn-primary ms-3" href="quote.html">Get A Quote</a>
+        <a class="btn btn-primary ms-3 quote-button" href="quote.html">Get A Quote</a>
       </div>
     </div>
   </nav>
+
 
   <section class="package">
     <div class="container align-self-center">
@@ -695,13 +854,13 @@
             role="tabpanel"
             aria-labelledby="section1-logo-design-tab"
           >
-            <div class="row">
+            <div class="row" style="cursor: pointer;">
               <div class="col-md-4" style="padding-bottom: 20px">
                 <img
                   src="images/logo1.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -709,7 +868,7 @@
                   src="images/logo2.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -717,17 +876,17 @@
                   src="images/logo3.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
-            <div class="row" style="padding-bottom: 20px">
+            <div class="row" style="padding-bottom: 20px; cursor: pointer;">
               <div class="col-md-4">
                 <img
                   src="images/logo4.webp"
                   alt="Logo Design 1"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -735,7 +894,7 @@
                   src="images/logo5.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -743,17 +902,17 @@
                   src="images/logo6.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
-            <div class="row" style="padding-bottom: 20px">
+            <div class="row" style="padding-bottom: 20px; cursor: pointer;">
               <div class="col-md-4">
                 <img
                   src="images/logo7.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -761,7 +920,7 @@
                   src="images/logo8.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -769,11 +928,34 @@
                   src="images/logo9.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
           </div>
+
+
+          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" style="background: transparent;">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content custom-modal-content">
+                <div class="modal-header custom-modal-header" style="background: none !important;">
+                  <!-- Close button positioned at top-right -->
+                  <!-- <button type="button" class="close custom-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                   -->
+                  <!-- Fullscreen icon -->
+                  <button type="button" class="btn btn-outline-secondary custom-fullscreen-btn" id="fullscreenBtn" style="position: absolute; top: -100px !important; right: -500px !important; border: 1px solid white !important; background: transparent; padding: 10px;">
+                    <i class="fas fa-expand" style="color: white !important;"></i>
+                  </button>
+                </div>
+                <div class="modal-body text-center custom-modal-body">
+                  <img id="modalImage" src="" class=" custom-modal-img" alt="Expanded Image">
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <div
             class="tab-pane fade"
@@ -787,7 +969,7 @@
                   src="images/animation1.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -795,7 +977,7 @@
                   src="images/animation2.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -803,7 +985,7 @@
                   src="images/animation3.webp"
                   alt="Logo Design 3"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -813,7 +995,7 @@
                   src="images/animation4.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -821,7 +1003,7 @@
                   src="images/animation5.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -829,7 +1011,7 @@
                   src="images/animation6.webp"
                   alt="Logo Design 3"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -839,7 +1021,7 @@
                   src="images/animation7.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -847,7 +1029,7 @@
                   src="images/animation8.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -855,7 +1037,7 @@
                   src="images/animation9.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -865,7 +1047,7 @@
                   src="images/animation10.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -873,7 +1055,7 @@
                   src="images/animation11.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -881,7 +1063,7 @@
                   src="images/animation12.webp"
                   alt="Logo Design 3"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -899,7 +1081,7 @@
                   src="images/illu1.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -907,7 +1089,7 @@
                   src="images/illu2.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -915,7 +1097,7 @@
                   src="images/illu3.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -925,7 +1107,7 @@
                   src="images/illu4.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -933,7 +1115,7 @@
                   src="images/illu5.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -941,7 +1123,7 @@
                   src="images/illu6.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -951,7 +1133,7 @@
                   src="images/illu7.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -959,7 +1141,7 @@
                   src="images/illu8.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -967,7 +1149,7 @@
                   src="images/illu9.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -977,7 +1159,7 @@
                   src="images/illu10.webp"
                   alt="Logo Design 1"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -985,7 +1167,7 @@
                   src="images/illu11.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -993,7 +1175,7 @@
                   src="images/illu12.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1011,7 +1193,7 @@
                   src="images/brand1.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1019,7 +1201,7 @@
                   src="images/brand2'.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1027,7 +1209,7 @@
                   src="images/brand3.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1037,7 +1219,7 @@
                   src="images/brand4.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1045,7 +1227,7 @@
                   src="images/brand5.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1053,7 +1235,7 @@
                   src="images/brand6.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1063,7 +1245,7 @@
                   src="images/brand7.webp"
                   alt="Logo Design 1"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1071,7 +1253,7 @@
                   src="images/brand8.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1079,7 +1261,7 @@
                   src="images/brand9.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1089,7 +1271,7 @@
                   src="images/brand10.webp"
                   alt="Logo Design 1"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1097,7 +1279,7 @@
                   src="images/brand11.webp"
                   alt="Logo Design 2"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1105,7 +1287,7 @@
                   src="images/brand12.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1123,7 +1305,7 @@
                   src="images/web1.webp"
                   alt="Logo Design 1"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1131,7 +1313,7 @@
                   src="images/web2.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1139,7 +1321,7 @@
                   src="images/web3.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1149,7 +1331,7 @@
                   src="images/web4.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1157,7 +1339,7 @@
                   src="images/web5.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1165,7 +1347,7 @@
                   src="images/web6.webp"
                   alt="Logo Design 3"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1175,7 +1357,7 @@
                   src="images/web7.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1183,7 +1365,7 @@
                   src="images/web8.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1191,7 +1373,7 @@
                   src="images/web9.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1201,7 +1383,7 @@
                   src="images/web10.webp"
                   alt="Logo Design 1"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1209,7 +1391,7 @@
                   src="images/web11.webp"
                   alt="Logo Design 2"
                   width="380px"
-                 
+                  style="padding-right: 20px"
                 />
               </div>
               <div class="col-md-4">
@@ -1217,7 +1399,7 @@
                   src="images/web12.webp"
                   alt="Logo Design 3"
                   width="380px"
-                  
+                  style="padding-right: 20px"
                 />
               </div>
             </div>
@@ -1692,317 +1874,108 @@
       </div>
     </section>
 
-    <section style="padding: 0; background: url('./images/footer-bg.png')">
+    <section style="padding: 0; background: url('./images/footer-bg.png') ;overflow-x: hidden;">
       <div class="footer-top">
-        <div class="container" style="width: 60%">
+        <div class="container" >
           <div class="row">
             <div class="col-lg-6">
               <div class="fleft" style="padding: 42px 0 10px">
                 <img
                   src="images/logo.png"
                   alt=""
+                  class="footer-logo"
                   style="width: 200px; vertical-align: middle; cursor: pointer"
                 />
                 <br />
-                <a href=""
-                  ><img
-                    src="images/dmca.png"
-                    alt=""
+                <div class="footer-images">
+                  <a href="">
+                    <img
+                      src="images/dmca.png"
+                      alt=""
+                      style="
+                        padding-top: 15px;
+                        border: 0;
+                        outline: 0;
+                        vertical-align: middle;
+                      "
+                    />
+                  </a>
+                  <img
+                    src="images/verified.png"
                     style="
                       padding-top: 15px;
                       border: 0;
                       outline: 0;
                       vertical-align: middle;
+                      cursor: pointer;
+                      max-width: 50px;
+                      margin-left: 20px;
                     "
-                /></a>
-                <img
-                  src="images/verified.png"
-                  style="
-                    padding-top: 15px;
-                    border: 0;
-                    outline: 0;
-                    vertical-align: middle;
-                    cursor: pointer;
-                    max-width: 50px;
-                    margin-left: 20px;
-                  "
-                  alt=""
-                />
-                <img
-                  src="images/uk.png"
-                  alt=""
-                  width="10%"
-                  style="margin-left: 1rem !important; cursor: pointer"
-                />
+                    alt=""
+                  />
+                  <img
+                    src="images/uk.png"
+                    alt=""
+                    width="10%"
+                    style="margin-left: 1rem !important; cursor: pointer"
+                  />
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div style="display: inline-block; width: 100%; padding: 40px 0">
-                <ul style="text-align: right; margin: 12px 0; width: 100%">
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >About Us</a
-                    >
+              <div class="footer-links" style="padding: 40px 0">
+                <ul class="link-list" >
+                  <li class="flist" style="display: inline-block; ">
+                    <a style="color: #fff; text-decoration: none;" href="about.html">About Us</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Packages</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="packages.html">Packages</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Showcase</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="showcase.html">Showcase</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Contact Us</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    text-align: center;
-
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    list-style-type: none;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
-                      <i
-                        class="fa-solid fa-phone"
-                        style="font-size: 13px; padding-right: 5px"
-                      ></i>
+      
+                <ul class="contact-info">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;"  >
+                      <i class="fa-solid fa-phone"></i>
                       +91 XXXXXXXXXX
                     </a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    text-align: center;
-                    list-style-type: none;
-                    font-size: 14px;
-                    font-size: 18px;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+      
+                <ul class="social-links">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-facebook"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-twitter"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-pinterest"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
-
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
@@ -2012,74 +1985,94 @@
           </div>
         </div>
       </div>
+      
       <div class="footer-botttom" style="background: #222328; padding: 10px 0">
         <div class="container" style="width: 60%">
           <div class="row align-items-center">
             <div class="col-sm-8">
-              <p
-                style="
-                  font-size: 12px;
-                  color: #fff;
-                  margin: 0;
-                  padding: 10px 0;
-                  font-weight: 400;
-                  line-height: 22px;
-                "
-              >
+              <p class="footer-copyright">
                 @ A Logo Design 2025 | All rights reserved
               </p>
             </div>
             <div class="col-sm-4">
-              <ul style="margin: 10px 0; float: right; list-style-type: none">
-                <li
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Terms of Services</a
-                  >
-                </li>
-                <li
-                  class="privacy"
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Privacy Policy</a
-                  >
-                </li>
+              <ul class="footer-bottom-links">
+                <li><a href="" style="color: #fff; text-decoration: none;">Terms of Services  |</a></li>
+                <li class="privacy" ><a href="" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="help-button" id="helpButton" data-toggle="modal" data-target="#helpModal">
+        <i class="fas fa-question-circle"></i> Help
+      </div>
+      
+      <div class="modal fade modal-right" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h5 class="modal-title" id="helpModalLabel">Leave us a message</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="help-label">Your name (optional)</label>
+                  <input type="text" class="form-control help-input" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="help-label">Email address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="help-label help-message">How can we help you?</label>
+                  <textarea class="form-control" id="message" rows="4" style="resize: none;"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="background-color: rgb(47, 57, 65) !important; color: rgb(255, 255, 255) !important; border-color: rgb(47, 57, 65) !important;">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    // Handle image click event to open modal
+    const images = document.querySelectorAll(".row img");
+    const modalImage = document.getElementById("modalImage");
+    const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+    images.forEach((image) => {
+      image.addEventListener("click", function () {
+       
+        modalImage.src = this.src;
+      
+        $("#imageModal").modal("show");
+      });
+    });
+
+    // Handle fullscreen toggle
+    let isFullscreen = false;
+    fullscreenBtn.addEventListener("click", function () {
+      if (isFullscreen) {
+        document.exitFullscreen();
+        isFullscreen = false;
+      } else {
+        document.querySelector(".modal-dialog").requestFullscreen();
+        isFullscreen = true;
+      }
+    });
+  });
+    </script>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>

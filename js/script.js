@@ -135,8 +135,4 @@ function toggleFAQ(element) {
   });
   
 
-
-
-
-
- 
+     

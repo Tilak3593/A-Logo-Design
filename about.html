@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-- <link rel="stylesheet" href="css/intlTelInput.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link rel="stylesheet" href="css/all.min.css" />
     <link
     rel="stylesheet"
@@ -38,6 +42,23 @@
       .list-head{
         font-size: 35px;
       }
+      .iti {
+    position: relative;
+    display: inline-block;
+    width: 100% !important; 
+    }
+  .iti__selected-dial-code{
+    color: #666 !important;
+  }
+  .iti__country-list{
+    color: #333;
+    width: 540%;
+    overflow-x: hidden;
+  }
+  .phone-number{
+    border: none;
+    outline: none;
+  }
       
       @media (max-width: 768px) {
         /* For mobile screens, make list items full width */
@@ -55,7 +76,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light about-nav"
+      class="navbar navbar-expand-lg navbar-light"
       style="
         position: fixed;
         top: 0;
@@ -78,6 +99,7 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="w3_open()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,7 +112,7 @@
               <a class="nav-link active" href="about.html">About</a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown large">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -104,7 +126,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <div class="dropdown-content">
                   <div class="row">
-                    <!-- First column -->
+                   
                     <div class="col-6">
                       <li
                         style="
@@ -326,7 +348,7 @@
                         </a>
                       </li>
                     </div>
-                    <!-- Second column -->
+                    
                     <div class="col-6">
                         <li
                           style="
@@ -522,6 +544,159 @@
                 </div>
               </ul>
             </li>
+            <li class="nav-item dropdown mobile">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-content">
+                  <div class="row">
+                    
+                    <div class="col-6">
+                     
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="logo-design.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          > Logo Design</a
+                        >
+                      </li>
+                    </div>
+                    
+                    <div class="col-6">
+                       <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="logo-animation.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Logo Animation
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="2D-illustration.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          2D Illustration
+                          </a>
+                        </li>
+                        <li class="serv" >
+                          <a
+                            class="dropdown-item"
+                            href="digital-branding.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Branding
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="website-design.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Website Design
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="craeteive-copy.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Creative Copy Writing
+                          </a>
+                        </li>
+                        
+                      </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+
             <li class="nav-item">
               <a class="nav-link" href="packages.html">Packages</a>
             </li>
@@ -534,14 +709,15 @@
             <li class="nav-item">
               <a class="nav-link " href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">+91 XXXXXXXXXX</a>
+            <li class="nav-item number">
+              <a class="nav-link " href="#">+91 XXXXXXXXXX</a>
             </li>
           </ul>
-          <a class="btn btn-primary ms-3" href="quote.html">Get A Quote</a>
+          <a class="btn btn-primary ms-3 quote-button" href="quote.html">Get A Quote</a>
         </div>
       </div>
     </nav>
+
 
     <section class="hero">
       <div class="container">
@@ -557,7 +733,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="images/about-1.jpg" alt="Our Mission" />
+            <img src="images/about-1.jpg" alt="Our Mission" width="480" height="390" />
           </div>
           <div class="col-lg-6 my-auto">
             <h2  class="about-head" >Our Mission</h2>
@@ -585,6 +761,7 @@
             padding: 0 0 15px;
             position: relative;
             letter-spacing: -1px;
+            text-align: start;
           "
         >
           Our Clientele
@@ -657,6 +834,7 @@
                 padding: 0 0 20px;
                 margin: 0;
                 font-size: 18px;
+                color: #666;
               "
             >
               A Logo Designs encourages a positive and friendly team culture from
@@ -668,9 +846,9 @@
               our priority and this service-based attitude is what got us here
               and made us an award-winning digital agency.
             </p>
-            <h2 class="about-head" style=" padding-bottom: 10px; color: #333;padding-top: 20px; ">
+            <h5 class="" style=" padding-bottom: 10px; color: #333;padding-top: 20px;  font-size: 24px;">
               Our valued client
-            </h2>
+            </h5>
             <p class="about-para"
               style="
                 font-weight: 400;
@@ -678,6 +856,7 @@
                 padding: 0 0 20px;
                 margin: 0;
                 font-size: 18px;
+                color: #666;
               "
             >
               Our performances are directly proportional to the satisfaction of
@@ -685,9 +864,9 @@
               sure we engrave our name in gold. We’ve partnered with
               corporations and rising startups all over the world.
             </p>
-            <h2 class="about-head" style=" padding-bottom: 10px; color: #333">
+            <h5 class="" style=" padding-bottom: 10px; color: #333; font-size: 24px;">
               Team
-            </h2>
+            </h5>
             <p class="about-para"
               style="
                 font-weight: 400;
@@ -695,6 +874,7 @@
                 padding: 0 0 20px;
                 margin: 0;
                 font-size: 18px;
+                color: #666;
               "
             >
               A Logo Designs is the team of bright creative people from various
@@ -731,7 +911,7 @@
                 padding: 0 0 15px;
                 position: relative;
                 letter-spacing: -1px;
-                text-align: center;
+                text-align: start;
               "
             >
               Why Partnership With Us?
@@ -1332,67 +1512,18 @@
                         />
                       </div>
 
-                      <div
-                        class="field"
-                        style="
-                          margin-right: 2%;
-                          margin-bottom: 10px;
-                          text-align: center;
-                          width: 100%;
-                          display: inline-block;
-                        "
-                      >
+                      <div class="field" style="margin-right: 2%; margin-bottom: 10px; text-align: center; width: 80%; display: inline-block;">
                         <input
-                          type="text"
-                          name="Phone"
-                          minlength="2"
-                          placeholder="Phone Number"
-                          style="
-                            width: 100%;
-                            margin: 0;
-                            border: 1px solid #e5e5e5;
-                            background: white;
-                            padding: 10px 15px;
-                            color: gray;
-                            font-size: 13px;
-                            border-radius: 5px;
-                            height: 40px;
-                            font-weight: 400;
-                            outline: 0 !important;
-                          "
+                            id="phone2"
+                            class="phone-number"
+                            type="tel"
+                            name="phone"
+                            minlength="2"
+                            placeholder="Phone Number"
+                            style="width: 100%; margin: 0; border: 1px solid #e5e5e5; background: white; padding: 10px 15px; color: gray; font-size: 13px; border-radius: 5px; height: 40px; font-weight: 400; outline: 0 !important;"
                         />
-                      </div>
-
-                      <div
-                        class="field"
-                        style="
-                          margin-right: 2%;
-                          margin-bottom: 10px;
-                          text-align: center;
-                          width: 100%;
-                          display: inline-block;
-                        "
-                      >
-                        <input
-                          type="text"
-                          name="Name"
-                          minlength="2"
-                          placeholder="Enter Your Name"
-                          style="
-                            width: 100%;
-                            margin: 0;
-                            border: 1px solid #e5e5e5;
-                            background: white;
-                            padding: 10px 15px;
-                            color: gray;
-                            font-size: 13px;
-                            border-radius: 5px;
-                            height: 40px;
-                            font-weight: 400;
-                            outline: 0 !important;
-                          "
-                        />
-                      </div>
+                    </div>
+                     
                     </div>
                   </div>
                   <div class="col-lg-12">
@@ -1450,319 +1581,110 @@
         </div>
       </div>
     </section>
+    
 
-    <section style="padding: 0; background: url('./images/footer-bg.png')">
+     <section style="padding: 0; background: url('./images/footer-bg.png') ;overflow-x: hidden;">
       <div class="footer-top">
-        <div class="container" style="width: 60%">
+        <div class="container" >
           <div class="row">
             <div class="col-lg-6">
               <div class="fleft" style="padding: 42px 0 10px">
                 <img
                   src="images/logo.png"
                   alt=""
+                  class="footer-logo"
                   style="width: 200px; vertical-align: middle; cursor: pointer"
                 />
                 <br />
-                <a href=""
-                  ><img
-                    src="images/dmca.png"
-                    alt=""
+                <div class="footer-images">
+                  <a href="">
+                    <img
+                      src="images/dmca.png"
+                      alt=""
+                      style="
+                        padding-top: 15px;
+                        border: 0;
+                        outline: 0;
+                        vertical-align: middle;
+                      "
+                    />
+                  </a>
+                  <img
+                    src="images/verified.png"
                     style="
                       padding-top: 15px;
                       border: 0;
                       outline: 0;
                       vertical-align: middle;
+                      cursor: pointer;
+                      max-width: 50px;
+                      margin-left: 20px;
                     "
-                /></a>
-                <img
-                  src="images/verified.png"
-                  style="
-                    padding-top: 15px;
-                    border: 0;
-                    outline: 0;
-                    vertical-align: middle;
-                    cursor: pointer;
-                    max-width: 50px;
-                    margin-left: 20px;
-                  "
-                  alt=""
-                />
-                <img
-                  src="images/uk.png"
-                  alt=""
-                  width="10%"
-                  style="margin-left: 1rem !important; cursor: pointer"
-                />
+                    alt=""
+                  />
+                  <img
+                    src="images/uk.png"
+                    alt=""
+                    width="10%"
+                    style="margin-left: 1rem !important; cursor: pointer"
+                  />
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div style="display: inline-block; width: 100%; padding: 40px 0">
-                <ul style="text-align: right; margin: 12px 0; width: 100%">
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >About Us</a
-                    >
+              <div class="footer-links" style="padding: 40px 0">
+                <ul class="link-list" >
+                  <li class="flist" style="display: inline-block; ">
+                    <a style="color: #fff; text-decoration: none;" href="about.html">About Us</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Packages</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="packages.html">Packages</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Showcase</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="showcase.html">Showcase</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Contact Us</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    text-align: center;
-                    float: right;
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    list-style-type: none;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
-                      <i
-                        class="fa-solid fa-phone"
-                        style="font-size: 13px; padding-right: 5px"
-                      ></i>
+      
+                <ul class="contact-info">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;"  >
+                      <i class="fa-solid fa-phone"></i>
                       +91 XXXXXXXXXX
                     </a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    float: right;
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    text-align: center;
-                    list-style-type: none;
-                    font-size: 14px;
-                    font-size: 18px;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+      
+                <ul class="social-links">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-facebook"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-twitter"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-pinterest"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
-
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
@@ -1772,75 +1694,79 @@
           </div>
         </div>
       </div>
+      
       <div class="footer-botttom" style="background: #222328; padding: 10px 0">
         <div class="container" style="width: 60%">
           <div class="row align-items-center">
             <div class="col-sm-8">
-              <p
-                style="
-                  font-size: 12px;
-                  color: #fff;
-                  margin: 0;
-                  padding: 10px 0;
-                  font-weight: 400;
-                  line-height: 22px;
-                "
-              >
+              <p class="footer-copyright">
                 @ A Logo Design 2025 | All rights reserved
               </p>
             </div>
             <div class="col-sm-4">
-              <ul style="margin: 10px 0; float: right; list-style-type: none">
-                <li
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Terms of Services</a
-                  >
-                </li>
-                <li
-                  class="privacy"
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Privacy Policy</a
-                  >
-                </li>
+              <ul class="footer-bottom-links">
+                <li><a href="" style="color: #fff; text-decoration: none;">Terms of Services  |</a></li>
+                <li class="privacy" ><a href="" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="help-button" id="helpButton" data-toggle="modal" data-target="#helpModal">
+        <i class="fas fa-question-circle"></i> Help
+      </div>
+      
+      <div class="modal fade modal-right" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h5 class="modal-title" id="helpModalLabel">Leave us a message</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="help-label">Your name (optional)</label>
+                  <input type="text" class="form-control help-input" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="help-label">Email address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="help-label help-message">How can we help you?</label>
+                  <textarea class="form-control" id="message" rows="4" style="resize: none;"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="background-color: rgb(47, 57, 65) !important; color: rgb(255, 255, 255) !important; border-color: rgb(47, 57, 65) !important;">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </section>
-
+    <script>
+      $(document).ready(function () {
+       // Select all elements with class 'phone-input'
+       var phoneInputs = document.querySelectorAll('input[type="tel"]');
+       
+       // Loop through all phone inputs and initialize the plugin
+       phoneInputs.forEach(function(input) {
+           window.intlTelInput(input, {
+               initialCountry: "IN", // You can set the default country here
+               separateDialCode: true,
+               utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+           });
+       });
+   });
+   </script>
 
 
     <script src="js/swiper-bundle.min.js"></script>

@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-- <link rel="stylesheet" href="css/intlTelInput.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -30,6 +36,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   
   <link rel="stylesheet" href="js/swiper-bundle.min.css" />
+  <style>
+    .iti {
+    position: relative;
+    display: inline-block;
+    width: 100% !important; 
+    }
+  .iti__selected-dial-code{
+    color: #666 !important;
+  }
+  .iti__country-list{
+    color: #333;
+    width: 540%;
+    overflow-x: hidden;
+  }
+  .phone-number{
+    border: none;
+    outline: none;
+  }
+  nav {
+    transition: 0.5s;
+  }
+
+  nav.scrolled {
+    background-color: #fff; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    height: 100px; /* Shrink height on scroll */
+  }
+  .list-home{
+  color:#fff !important;
+}
+  nav.scrolled .navbar-brand img {
+    /* height: 50px; */
+    transition: height 0.5s;
+  }
+  nav.scrolled .list-home{
+    color: #333 !important;
+  }
+
+  /* Adjust non-scrolled navbar */
+  nav .navbar-brand img {
+    width: 200px; /* Initial size of the logo */
+    transition: height 0.5s;
+  }
+  
+  </style>
   </head>
   <body>
     <div id="backgroundSlider" class="carousel slide" data-bs-ride="carousel">
@@ -48,14 +99,17 @@
         </div>
       </div>
     </div>
+
+
+   
     <nav
       class="navbar navbar-expand-lg navbar-light"
       style="
         position: fixed;
         top: 0;
         
-        background-color: #fff;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+       
+        
         z-index: 99;
         padding: 0;
       "
@@ -72,21 +126,22 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="w3_open()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active nav-list-item list-home"   href="index.html" >Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link nav-list-item list-home" href="about.html">About</a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown large">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle nav-list-item list-home"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -98,7 +153,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <div class="dropdown-content">
                   <div class="row">
-                    <!-- First column -->
+                   
                     <div class="col-6">
                       <li
                         style="
@@ -320,7 +375,7 @@
                         </a>
                       </li>
                     </div>
-                    <!-- Second column -->
+                    
                     <div class="col-6">
                         <li
                           style="
@@ -516,23 +571,177 @@
                 </div>
               </ul>
             </li>
+            <li class="nav-item dropdown mobile">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-content">
+                  <div class="row">
+                    
+                    <div class="col-6">
+                     
+                      <li class="serv">
+                        <a
+                          class="dropdown-item"
+                          href="logo-design.html"
+                          style="
+                            padding: 4px 0;
+                            display: block;
+                            width: 100%;
+                            clear: both;
+                            font-weight: 400;
+                            color: #cc007c;
+                            text-align: inherit;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: 14px;
+                          "
+                          > Logo Design</a
+                        >
+                      </li>
+                    </div>
+                    
+                    <div class="col-6">
+                       <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="logo-animation.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Logo Animation
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="2D-illustration.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          2D Illustration
+                          </a>
+                        </li>
+                        <li class="serv" >
+                          <a
+                            class="dropdown-item"
+                            href="digital-branding.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Branding
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="website-design.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Website Design
+                          </a>
+                        </li>
+                        <li class="serv">
+                          <a
+                            class="dropdown-item"
+                            href="craeteive-copy.html"
+                            style="
+                              padding: 4px 0;
+                              display: block;
+                              width: 100%;
+                              clear: both;
+                              font-weight: 400;
+                              color: #cc007c;
+                              text-align: inherit;
+                              white-space: nowrap;
+                              background-color: transparent;
+                              border: 0;
+                              font-size: 14px;
+                            "
+                          >
+                          Creative Copy Writing
+                          </a>
+                        </li>
+                        
+                      </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+
             <li class="nav-item">
-              <a class="nav-link" href="packages.html">Packages</a>
+              <a class="nav-link nav-list-item list-home" href="packages.html">Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="combo-packages.html">Combo Packages</a>
+              <a class="nav-link nav-list-item list-home" href="combo-packages.html">Combo Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="showcase.html">Showcase</a>
+              <a class="nav-link nav-list-item list-home" href="showcase.html">Showcase</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
+              <a class="nav-link nav-list-item list-home" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">+91 XXXXXXXXXX</a>
+            <li class="nav-item number">
+              <a class="nav-link nav-list-item list-home" href="#">+91 XXXXXXXXXX</a>
             </li>
           </ul>
-          <a class="btn btn-primary ms-3" href="quote.html">Get A Quote</a>
+          <a class="btn btn-primary ms-3 quote-button" href="quote.html">Get A Quote</a>
+          <a class="flag-desc list-home" href="" style="text-decoration: none; color: #000;"><img src="/images/indiaflag.jpg" alt="" width="35px"  ><small style="padding-left: 5px; font-size: 14px;">IND</small></a>
         </div>
       </div>
     </nav>
@@ -557,7 +766,7 @@
               business, Our expert logo design services are made to make an
               imprint on your company.
             </p>
-            <a class="btn btn-primary start" href="#">Lets Get Started</a>
+            <a class="btn btn-primary start" href="quote.html">Lets Get Started</a>
           </div>
           <!-- Column for Form (Right Side) -->
           <div class="col-md-5">
@@ -579,7 +788,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Enter your name"
-                    style="padding: 15px; border-radius: 4px; font-size: 13px"
+                    style="padding: 20px; border-radius: 4px; font-size: 13px"
                     required
                   />
                 </div>
@@ -589,18 +798,19 @@
                     type="email"
                     class="form-control"
                     placeholder="Enter email here"
-                    style="padding: 15px; border-radius: 4px; font-size: 13px"
+                    style="padding: 20px; border-radius: 4px; font-size: 13px"
                     required
                   />
                 </div>
 
                 <div class="form-group mb-3">
                   <input
-                    id="phone"
+                    id="phone1"
+                    class="phone-number"
                     type="tel"
                     class="form-control"
                     placeholder="Phone Number"
-                    style="padding: 15px; border-radius: 4px; font-size: 13px"
+                    style="padding: 20px; border-radius: 4px; font-size: 13px"
                     required
                   />
                 </div>
@@ -674,20 +884,20 @@
       </div>
     </section>
 
-    <section  class=" home-about " style="padding: 60px;">
+    <section  class=" home-about " style="padding: 60px 0; ">
       <div class="container">
         <div class="row align-items-center">
           <!-- Text Section -->
           <div class="col-md-7 text-start">
-            <h2 class="fw-bold" style="font-size: 34px">
+            <h2 class=" home-padding text-start" style="font-size: 35px; font-weight: 600;">
               Why Choose Our Professional Logo Design Services
             </h2>
             <p
               class="mt-4"
-              style="font-weight: 400; line-height: 22px; padding: 0 0 20px"
+              style="font-weight: 400; line-height: 22px; padding: 0 0 20px;color: #666; font-size: 14px;"
             >
               Choosing A Logo Designs for your
-              <a href="" class="text-black desc" style="text-decoration: none"
+              <a href="" class=" desc" style="text-decoration: none; color: #666;"
                 >professional logo design</a
               >
               means partnering up with a professional logo design company
@@ -705,7 +915,7 @@
             <!-- Buttons -->
             <div class="mt-4  pb-4 ">
               <a
-                href="#"
+                href="quote.html"
                 class="btn btn-primary btn-lg chat-btn chat-button "
                 style="
                   background-image: linear-gradient(
@@ -914,7 +1124,7 @@
             </div>
           </div>
         </div>
-      <div class="col-lg-12">
+      <div class="col-lg-12" style="padding-top: 40px;">
         <ul class="list-unstyled" >
          
           <li class="list-row row mb-4" >
@@ -962,7 +1172,7 @@
       
     </section>
 
-    <!-- <section class="container py-5">
+    <section class="container py-5">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 text-center">
           <h2
@@ -993,7 +1203,7 @@
           </p>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <div class="toggle py-5">
       <div class="container">
@@ -1092,7 +1302,7 @@
             role="tabpanel"
             aria-labelledby="section1-logo-design-tab"
           >
-            <div class="row">
+            <div class="row" style="cursor: pointer;">
               <div class="col-md-4" style="padding-bottom: 20px">
                 <img
                   src="images/logo1.webp"
@@ -1118,7 +1328,7 @@
                 />
               </div>
             </div>
-            <div class="row" style="padding-bottom: 20px">
+            <div class="row" style="padding-bottom: 20px; cursor: pointer;">
               <div class="col-md-4">
                 <img
                   src="images/logo4.webp"
@@ -1144,7 +1354,7 @@
                 />
               </div>
             </div>
-            <div class="row" style="padding-bottom: 20px">
+            <div class="row" style="padding-bottom: 20px; cursor: pointer;">
               <div class="col-md-4">
                 <img
                   src="images/logo7.webp"
@@ -1171,6 +1381,29 @@
               </div>
             </div>
           </div>
+
+
+          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" style="background: transparent;">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content custom-modal-content">
+                <div class="modal-header custom-modal-header" style="background: none !important;">
+                  <!-- Close button positioned at top-right -->
+                  <!-- <button type="button" class="close custom-close-btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                   -->
+                  <!-- Fullscreen icon -->
+                  <button type="button" class="btn btn-outline-secondary custom-fullscreen-btn" id="fullscreenBtn" style="position: absolute; top: -100px !important; right: -500px !important; border: 1px solid white !important; background: transparent; padding: 10px;">
+                    <i class="fas fa-expand" style="color: white !important;"></i>
+                  </button>
+                </div>
+                <div class="modal-body text-center custom-modal-body">
+                  <img id="modalImage" src="" class=" custom-modal-img" alt="Expanded Image">
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <div
             class="tab-pane fade"
@@ -1744,21 +1977,7 @@
               Website Design
             </button>
           </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link logo"
-              id="section2-blog-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#section2-blog"
-              type="button"
-              role="tab"
-              aria-controls="section2-blog"
-              aria-selected="false"
-              style="border: none; outline: none"
-            >
-              Content Writing
-            </button>
-          </li>
+         
         </ul>
 
         <div class="tab-content" id="pills-tabContent-2">
@@ -1769,7 +1988,7 @@
             role="tabpanel"
             aria-labelledby="section2-logo-design-tab"
           >
-            <ul class="tabs tabs-logo current pkg-sliders">
+            <ul class="tabs tabs-logo current " style="padding: 0rem ;">
               <li  class="col-lg-4 col-md-6 col-sm-12 pkg-card"
                 style="
                   display: inline-block;
@@ -1908,7 +2127,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f45948;
                       border-radius: 30px;
@@ -1925,7 +2144,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="startup-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2076,7 +2295,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -2093,7 +2312,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="professional-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2244,7 +2463,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -2261,7 +2480,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="elite-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2414,7 +2633,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -2431,7 +2650,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="buisess-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2580,7 +2799,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -2597,7 +2816,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="buisness-rebranding.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2748,7 +2967,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -2765,7 +2984,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="elite-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -2928,7 +3147,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -2945,7 +3164,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="2D-standard.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3099,7 +3318,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -3116,7 +3335,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="2D-advance-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3265,7 +3484,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -3282,7 +3501,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="3D-standard-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3435,7 +3654,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -3452,7 +3671,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="3D-advance-logo.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3604,7 +3823,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -3621,7 +3840,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="basic-2d.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3661,7 +3880,8 @@
                         font-weight: 600;
                       "
                     >
-                      Standard 2D Illustration
+                      Standard 2D
+                      <br> Illustration
                     </h4>
                     <p
                       style="
@@ -3767,7 +3987,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -3784,7 +4004,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="standard-2d.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -3821,7 +4041,8 @@
                         font-weight: 700;
                       "
                     >
-                      <h3>Advance 2D Illustration</h3>
+                      <h3>Advance 2D 
+                        <br>Illustration</h3>
                     </h4>
                     <p
                       style="
@@ -3924,7 +4145,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -3941,7 +4162,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="advance-2d.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4085,7 +4306,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -4102,7 +4323,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="advance-pro-2d.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4242,7 +4463,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -4259,7 +4480,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="premiuim.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4409,7 +4630,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f45948;
                       border-radius: 30px;
@@ -4426,7 +4647,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="branding1.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4570,7 +4791,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -4587,7 +4808,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="branding2.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4726,7 +4947,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -4743,7 +4964,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="branding3.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -4884,7 +5105,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -4901,7 +5122,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="branding4.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5034,7 +5255,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -5051,7 +5272,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web1.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5176,7 +5397,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -5193,7 +5414,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web2.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5323,7 +5544,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -5340,7 +5561,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web3.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5485,7 +5706,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #488cfb;
                       border-radius: 30px;
@@ -5502,7 +5723,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web4.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5662,7 +5883,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #20cb98;
                       border-radius: 30px;
@@ -5679,7 +5900,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web5.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5845,7 +6066,7 @@
                   "
                 >
                   <a
-                    href=""
+                    href="quote.html"
                     style="
                       background-color: #f85649;
                       border-radius: 30px;
@@ -5862,7 +6083,7 @@
                   >
                 </div>
                 <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
+                  <a href="web6.html" style="text-decoration: none; color: #333"
                     >View Details</a
                   >
                 </div>
@@ -5870,789 +6091,7 @@
             </ul>
           </div>
 
-          <div
-            id="section2-blog"
-            class="tab-pane fade"
-            role="tabpanel"
-            aria-labelledby="section2-blog-tab"
-          >
-            <ul class="tabs tabs-logo current pkg-sliders">
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
-                style="
-                  display: inline-block;
-                  float: none;
-                  height: 580px;
-                  padding: 0 15px;
-                  
-                  margin-bottom: 60px;
-                  position: relative;
-                "
-              >
-                <div
-                  class="wrap"
-                  style="
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0 0 26px #0000001a;
-                    position: relative;
-                  "
-                >
-                  <div class="badge text-white">BEST SELLER</div>
-                  <div
-                    class="headarea"
-                    style="text-align: center; padding: 30px 20px 20px"
-                  >
-                    <h4
-                      style="
-                        color: #323637;
-                        font-size: 28px;
-                        padding-bottom: 10px;
-                        font-weight: 600;
-                      "
-                    >
-                      Web Content Packages
-                    </h4>
-                    <p
-                      style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 1.5;
-                        font-weight: 500;
-                        padding: 0 10px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
-                        margin: auto;
-                      "
-                    >
-                      Suitable for Personal and Professional Web Projects
-                    </p>
-                    <div class="details" style="padding: 30px 10px">
-                      <ul
-                        style="
-                          list-style: none;
-                          padding: 0;
-                          max-height: 150px;
-                          overflow-y: auto;
-                        "
-                      >
-                        <div
-                          class="list-items"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 100%;
-                            max-width: 100%;
-                            outline: 0;
-                            padding: 0 10px;
-                            direction: ltr;
-                          "
-                        >
-                          <li class="allitems1">250 Words per Page</li>
-                          <li class="allitems1">Timely Delivery</li>
-                          <li class="allitems1">Superior Standard Content</li>
-                          <li class="allitems1">
-                            Professional Industry Specific Writers
-                          </li>
-                          <li class="allitems1">100% Satisfaction Guarantee</li>
-                          <li class="allitems1">100% Money Back Guarantee *</li>
-                          <li class="allitems1">100% Ownership Rights</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      class="price"
-                      style="padding: 10px 10px 50px; display: flex"
-                    >
-                      <div class="left-price" style="width: 48%; float: left">
-                        <h4
-                          style="
-                            color: #20cb98;
-                            font-size: 30px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                          "
-                        >
-                          <strong style="font-weight: 400; font-size: 22px"
-                            >$</strong
-                          >
-                          70.00
-                        </h4>
-                      </div>
-                      <div
-                        class="ryt-desc"
-                        style="width: 54%; text-align: right; float: right"
-                      >
-                        <p
-                          style="
-                            line-height: 1.4;
-                            text-align: right;
-                            font-weight: 500;
-                            font-size: 13px;
-                            padding: 0;
-                            width: 100%;
-                            margin: auto;
-                            color: #333;
-                          "
-                        >
-                          Add on: $20 for 24 Hours Rush Delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pkg-btn"
-                  style="
-                    margin-top: -30px;
-                    text-align: center;
-                    clear: both;
-                    z-index: 9;
-                    padding-bottom: 10px;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      background-color: #20cb98;
-                      border-radius: 30px;
-                      color: #fff;
-                      display: inline-block;
-                      border: 1px solid white;
-                      transition: 0.4s;
-                      padding: 14px 50px;
-                      font-weight: 700;
-                      font-size: 16px;
-                      text-decoration: none;
-                    "
-                    >Buy Your Plan</a
-                  >
-                </div>
-                <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
-                    >View Details</a
-                  >
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
-                style="
-                  display: inline-block;
-                  float: none;
-                  height: 580px;
-                  padding: 0 15px;
-                  
-                  margin-bottom: 60px;
-                  position: relative;
-                "
-              >
-                <div
-                  class="wrap"
-                  style="
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0 0 26px #0000001a;
-                    position: relative;
-                  "
-                >
-                  <div
-                    class="headarea"
-                    style="text-align: center; padding: 30px 20px 20px"
-                  >
-                    <h4
-                      style="
-                        color: #323637;
-                        font-size: 28px;
-                        padding-bottom: 10px;
-                        font-weight: 600;
-                      "
-                    >
-                      Article Writing Packages
-                    </h4>
-                    <p
-                      style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 1.5;
-                        font-weight: 500;
-                        padding: 0 10px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
-                        margin: auto;
-                      "
-                    >
-                      Suitable for Off-Site and On-Site article posting
-                    </p>
-                    <div class="details" style="padding: 30px 10px">
-                      <ul
-                        style="
-                          list-style: none;
-                          padding: 0;
-                          max-height: 150px;
-                          overflow-y: auto;
-                        "
-                      >
-                        <div
-                          class="list-items"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 100%;
-                            max-width: 100%;
-                            outline: 0;
-                            padding: 0 10px;
-                            direction: ltr;
-                          "
-                        >
-                          <li class="allitems">300 Words per Page</li>
-                          <li class="allitems">Timely Delivery</li>
-                          <li class="allitems">Superior Standard Content</li>
-                          <li class="allitems">Professional Writers</li>
-                          <li class="allitems">100% Satisfaction Guarantee</li>
-                          <li class="allitems">100% Money Back Guarantee</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      class="price"
-                      style="padding: 10px 10px 50px; display: flex"
-                    >
-                      <div class="left-price" style="width: 48%; float: left">
-                        <h4
-                          style="
-                            color: #f85649;
-                            font-size: 30px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                          "
-                        >
-                          <strong style="font-weight: 400; font-size: 22px"
-                            >$</strong
-                          >
-                          40.00
-                        </h4>
-                      </div>
-                      <div
-                        class="ryt-desc"
-                        style="width: 54%; text-align: right; float: right"
-                      >
-                        <p
-                          style="
-                            line-height: 1.4;
-                            text-align: right;
-                            font-weight: 500;
-                            font-size: 13px;
-                            padding: 0;
-                            width: 100%;
-                            margin: auto;
-                            color: #333;
-                          "
-                        >
-                          Add on: $20 for 24 Hours Rush Delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pkg-btn"
-                  style="
-                    margin-top: -30px;
-                    text-align: center;
-                    clear: both;
-                    z-index: 9;
-                    padding-bottom: 10px;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      background-color: #f85649;
-                      border-radius: 30px;
-                      color: #fff;
-                      display: inline-block;
-                      border: 1px solid white;
-                      transition: 0.4s;
-                      padding: 14px 50px;
-                      font-weight: 700;
-                      font-size: 16px;
-                      text-decoration: none;
-                    "
-                    >Buy Your Plan</a
-                  >
-                </div>
-                <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
-                    >View Details</a
-                  >
-                </div>
-              </li>
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
-                style="
-                  display: inline-block;
-                  float: none;
-                  height: 580px;
-                  padding: 0 15px;
-                  
-                  margin-bottom: 60px;
-                  position: relative;
-                "
-              >
-                <div
-                  class="wrap"
-                  style="
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0 0 26px #0000001a;
-                    position: relative;
-                  "
-                >
-                  <div
-                    class="headarea"
-                    style="text-align: center; padding: 30px 20px 20px"
-                  >
-                    <h4
-                      style="
-                        color: #323637;
-                        font-size: 28px;
-                        padding-bottom: 10px;
-                        font-weight: 600;
-                      "
-                    >
-                      Creative Writing Packages
-                    </h4>
-                    <p
-                      style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 1.5;
-                        font-weight: 500;
-                        padding: 0 10px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
-                        margin: auto;
-                      "
-                    >
-                      Suitable for clients seeking Innovative Content
-                    </p>
-                    <div class="details" style="padding: 30px 10px">
-                      <ul
-                        style="
-                          list-style: none;
-                          padding: 0;
-                          max-height: 150px;
-                          overflow-y: auto;
-                        "
-                      >
-                        <div
-                          class="list-items"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 100%;
-                            max-width: 100%;
-                            outline: 0;
-                            padding: 0 10px;
-                            direction: ltr;
-                          "
-                        >
-                          <li class="allitems2">250 Words per Page</li>
-                          <li class="allitems2">Timely Delivery</li>
-                          <li class="allitems2">Superior Standard Content</li>
-                          <li class="allitems2">
-                            Professional Industry Specific Writers
-                          </li>
-                          <li class="allitems2">100% Satisfaction Guarantee</li>
-                          <li class="allitems2">100% Money Back Guarantee</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      class="price"
-                      style="padding: 10px 10px 50px; display: flex"
-                    >
-                      <div class="left-price" style="width: 48%; float: left">
-                        <h4
-                          style="
-                            color: #488cfb;
-                            font-size: 30px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                          "
-                        >
-                          <strong style="font-weight: 400; font-size: 22px"
-                            >$</strong
-                          >
-                          75.00
-                        </h4>
-                      </div>
-                      <div
-                        class="ryt-desc"
-                        style="width: 54%; text-align: right; float: right"
-                      >
-                        <p
-                          style="
-                            line-height: 1.4;
-                            text-align: right;
-                            font-weight: 500;
-                            font-size: 13px;
-                            padding: 0;
-                            width: 100%;
-                            margin: auto;
-                            color: #333;
-                          "
-                        >
-                          Add on: $20 for 24 Hours Rush Delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pkg-btn"
-                  style="
-                    margin-top: -30px;
-                    text-align: center;
-                    clear: both;
-                    z-index: 9;
-                    padding-bottom: 10px;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      background-color: #488cfb;
-                      border-radius: 30px;
-                      color: #fff;
-                      display: inline-block;
-                      border: 1px solid white;
-                      transition: 0.4s;
-                      padding: 14px 50px;
-                      font-weight: 700;
-                      font-size: 16px;
-                      text-decoration: none;
-                    "
-                    >Buy Your Plan</a
-                  >
-                </div>
-                <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
-                    >View Details</a
-                  >
-                </div>
-              </li>
-            </ul>
-            <ul class="tabs tabs-logo current pkg-sliders">
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
-                style="
-                  display: inline-block;
-                  float: none;
-                  height: 580px;
-                  padding: 0 15px;
-                 
-                  margin-bottom: 60px;
-                  position: relative;
-                "
-              >
-                <div
-                  class="wrap"
-                  style="
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0 0 26px #0000001a;
-                    position: relative;
-                  "
-                >
-                  <div
-                    class="headarea"
-                    style="text-align: center; padding: 30px 20px 20px"
-                  >
-                    <h4
-                      style="
-                        color: #323637;
-                        font-size: 28px;
-                        padding-bottom: 10px;
-                        font-weight: 600;
-                      "
-                    >
-                      Blog Writing Packages
-                    </h4>
-                    <p
-                      style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 1.5;
-                        font-weight: 500;
-                        padding: 0 10px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
-                        margin: auto;
-                      "
-                    >
-                      Suitable for Personal and Corporate Blog Projects
-                    </p>
-                    <div class="details" style="padding: 30px 10px">
-                      <ul
-                        style="
-                          list-style: none;
-                          padding: 0;
-                          max-height: 150px;
-                          overflow-y: auto;
-                        "
-                      >
-                        <div
-                          class="list-items"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 100%;
-                            max-width: 100%;
-                            outline: 0;
-                            padding: 0 10px;
-                            direction: ltr;
-                          "
-                        >
-                          <li class="allitems">250 Words per Page</li>
-                          <li class="allitems">Timely Delivery</li>
-                          <li class="allitems">Superior Standard Content</li>
-                          <li class="allitems">Professional Writers</li>
-                          <li class="allitems">100% Satisfaction Guarantee</li>
-                          <li class="allitems">100% Money Back Guarantee</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      class="price"
-                      style="padding: 10px 10px 50px; display: flex"
-                    >
-                      <div class="left-price" style="width: 48%; float: left">
-                        <h4
-                          style="
-                            color: #f85649;
-                            font-size: 30px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                          "
-                        >
-                          <strong style="font-weight: 400; font-size: 22px"
-                            >$</strong
-                          >
-                          40.00
-                        </h4>
-                      </div>
-                      <div
-                        class="ryt-desc"
-                        style="width: 54%; text-align: right; float: right"
-                      >
-                        <p
-                          style="
-                            line-height: 1.4;
-                            text-align: right;
-                            font-weight: 500;
-                            font-size: 13px;
-                            padding: 0;
-                            width: 100%;
-                            margin: auto;
-                            color: #333;
-                          "
-                        >
-                          Add on: £20 for 24 Hours Rush Delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pkg-btn"
-                  style="
-                    margin-top: -30px;
-                    text-align: center;
-                    clear: both;
-                    z-index: 9;
-                    padding-bottom: 10px;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      background-color: #f85649;
-                      border-radius: 30px;
-                      color: #fff;
-                      display: inline-block;
-                      border: 1px solid white;
-                      transition: 0.4s;
-                      padding: 14px 50px;
-                      font-weight: 700;
-                      font-size: 16px;
-                      text-decoration: none;
-                    "
-                    >Buy Your Plan</a
-                  >
-                </div>
-                <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
-                    >View Details</a
-                  >
-                </div>
-              </li>
-              <li class="col-lg-4 col-md-6 col-sm-12 pkg-card"
-                style="
-                  display: inline-block;
-                  float: none;
-                  height: 580px;
-                  padding: 0 15px;
-                  
-                  margin-bottom: 60px;
-                  position: relative;
-                "
-              >
-                <div
-                  class="wrap"
-                  style="
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0 0 26px #0000001a;
-                    position: relative;
-                  "
-                >
-                  <div
-                    class="headarea"
-                    style="text-align: center; padding: 30px 20px 20px"
-                  >
-                    <h4
-                      style="
-                        color: #323637;
-                        font-size: 28px;
-                        padding-bottom: 10px;
-                        font-weight: 600;
-                      "
-                    >
-                      Infographics Packages
-                    </h4>
-                    <p
-                      style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 1.5;
-                        font-weight: 500;
-                        padding: 0 10px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
-                        margin: auto;
-                      "
-                    >
-                      Suitable for Personal and Corporate Marketing Projects
-                    </p>
-                    <div class="details" style="padding: 30px 10px">
-                      <ul
-                        style="
-                          list-style: none;
-                          padding: 0;
-                          max-height: 150px;
-                          overflow-y: auto;
-                        "
-                      >
-                        <div
-                          class="list-items"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 100%;
-                            max-width: 100%;
-                            outline: 0;
-                            padding: 0 10px;
-                            direction: ltr;
-                          "
-                        >
-                          <li class="allitems2">120 Words per Infographic</li>
-                          <li class="allitems2">Timely Delivery</li>
-                          <li class="allitems2">Superior Standard Content</li>
-                          <li class="allitems2">Professional Writers</li>
-                          <li class="allitems2">100% Satisfaction Guarantee</li>
-                          <li class="allitems2">100% Money Back Guarantee</li>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      class="price"
-                      style="padding: 10px 10px 50px; display: flex"
-                    >
-                      <div class="left-price" style="width: 48%; float: left">
-                        <h4
-                          style="
-                            color: #488cfb;
-                            font-size: 30px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                          "
-                        >
-                          <strong style="font-weight: 400; font-size: 22px"
-                            >$</strong
-                          >
-                          200.00
-                        </h4>
-                      </div>
-                      <div
-                        class="ryt-desc"
-                        style="width: 54%; text-align: right; float: right"
-                      >
-                        <p
-                          style="
-                            line-height: 1.4;
-                            text-align: right;
-                            font-weight: 500;
-                            font-size: 13px;
-                            padding: 0;
-                            width: 100%;
-                            margin: auto;
-                            color: #333;
-                          "
-                        >
-                          Add on: $20 for 24 Hours Rush Delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pkg-btn"
-                  style="
-                    margin-top: -30px;
-                    text-align: center;
-                    clear: both;
-                    z-index: 9;
-                    padding-bottom: 10px;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      background-color: #488cfb;
-                      border-radius: 30px;
-                      color: #fff;
-                      display: inline-block;
-                      border: 1px solid white;
-                      transition: 0.4s;
-                      padding: 14px 50px;
-                      font-weight: 700;
-                      font-size: 16px;
-                      text-decoration: none;
-                    "
-                    >Buy Your Plan</a
-                  >
-                </div>
-                <div class="view-btn text-center">
-                  <a href="" style="text-decoration: none; color: #333"
-                    >View Details</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -6670,7 +6109,7 @@
               "
             >
               Curious about the cost of our logo design services?
-              <a href="" style="color: #8d2dcf"
+              <a href="quote.html" style="color: #8d2dcf"
                 >Get a Free Logo Design Quote Now!</a
               >
             </h3>
@@ -6682,7 +6121,7 @@
     <section style="padding: 60px 0; background-color: #f7f9fc">
       <div class="container">
         <div class="row">
-          <h2 style="font-size: 34px; width: 100%; text-align: center">
+          <h2 style="font-size: 34px; width: 100%; text-align: center;font-weight: 600">
             A LOGO DESIGNS WORKS FOR B2B and B2C Companies
           </h2>
           <div class="col-lg-10 offset-lg-1">
@@ -7118,7 +6557,7 @@
             </h3>
             <a
               class="design"
-              href=""
+              href="quote.html"
               style="
                 background: #b960c3;
                 background-image: linear-gradient(
@@ -7264,7 +6703,7 @@
         </div>
 
         <div class="mt-5">
-          <a href="#" class="btn-gradient">Request a Custom Quote</a>
+          <a href="quote.html" class="btn-gradient">Request a Custom Quote</a>
           <p
             style="
               font-weight: 700;
@@ -7570,9 +7009,10 @@
                   padding: 0 0 15px;
                   position: relative;
                   letter-spacing: -1px;
+                  text-align: left;
                 "
               >
-                Discuss with our Experts & Choose the Best Solution
+                Discuss with our Experts & <br> Choose the Best Solution
               </h2>
 
               <p class="home-para"
@@ -7671,67 +7111,19 @@
                         />
                       </div>
 
-                      <div
-                        class="field"
-                        style="
-                          margin-right: 2%;
-                          margin-bottom: 10px;
-                          text-align: center;
-                          width: 80%;
-                          display: inline-block;
-                        "
-                      >
+                      <div class="field" style="margin-right: 2%; margin-bottom: 10px; text-align: center; width: 80%; display: inline-block;">
                         <input
-                          type="text"
-                          name="Phone"
-                          minlength="2"
-                          placeholder="Phone Number"
-                          style="
-                            width: 100%;
-                            margin: 0;
-                            border: 1px solid #e5e5e5;
-                            background: white;
-                            padding: 10px 15px;
-                            color: gray;
-                            font-size: 13px;
-                            border-radius: 5px;
-                            height: 40px;
-                            font-weight: 400;
-                            outline: 0 !important;
-                          "
+                            id="phone2"
+                            class="phone-number"
+                            type="tel"
+                            name="phone"
+                            minlength="2"
+                            placeholder="Phone Number"
+                            style="width: 100%; margin: 0; border: 1px solid #e5e5e5; background: white; padding: 10px 15px; color: gray; font-size: 13px; border-radius: 5px; height: 40px; font-weight: 400; outline: 0 !important;"
                         />
-                      </div>
+                    </div>
 
-                      <div
-                        class="field"
-                        style="
-                          margin-right: 2%;
-                          margin-bottom: 10px;
-                          text-align: center;
-                          width: 80%;
-                          display: inline-block;
-                        "
-                      >
-                        <input
-                          type="text"
-                          name="Name"
-                          minlength="2"
-                          placeholder="Enter Your Name"
-                          style="
-                            width: 100%;
-                            margin: 0;
-                            border: 1px solid #e5e5e5;
-                            background: white;
-                            padding: 10px 15px;
-                            color: gray;
-                            font-size: 13px;
-                            border-radius: 5px;
-                            height: 40px;
-                            font-weight: 400;
-                            outline: 0 !important;
-                          "
-                        />
-                      </div>
+                      
                     </div>
                   </div>
                   <div class="col-lg-12">
@@ -7790,318 +7182,108 @@
       </div>
     </section>
 
-    <section style="padding: 0; background: url('./images/footer-bg.png')">
+    <section style="padding: 0; background: url('./images/footer-bg.png') ;overflow-x: hidden;">
       <div class="footer-top">
-        <div class="container" style="width: 60%">
+        <div class="container" >
           <div class="row">
             <div class="col-lg-6">
               <div class="fleft" style="padding: 42px 0 10px">
                 <img
                   src="images/logo.png"
                   alt=""
+                  class="footer-logo"
                   style="width: 200px; vertical-align: middle; cursor: pointer"
                 />
                 <br />
-                <a href=""
-                  ><img
-                    src="images/dmca.png"
-                    alt=""
+                <div class="footer-images">
+                  <a href="">
+                    <img
+                      src="images/dmca.png"
+                      alt=""
+                      style="
+                        padding-top: 15px;
+                        border: 0;
+                        outline: 0;
+                        vertical-align: middle;
+                      "
+                    />
+                  </a>
+                  <img
+                    src="images/verified.png"
                     style="
                       padding-top: 15px;
                       border: 0;
                       outline: 0;
                       vertical-align: middle;
+                      cursor: pointer;
+                      max-width: 50px;
+                      margin-left: 20px;
                     "
-                /></a>
-                <img
-                  src="images/verified.png"
-                  style="
-                    padding-top: 15px;
-                    border: 0;
-                    outline: 0;
-                    vertical-align: middle;
-                    cursor: pointer;
-                    max-width: 50px;
-                    margin-left: 20px;
-                  "
-                  alt=""
-                />
-                <img
-                  src="images/uk.png"
-                  alt=""
-                  width="10%"
-                  style="margin-left: 1rem !important; cursor: pointer"
-                />
+                    alt=""
+                  />
+                  <img
+                    src="images/ind-flag.png"
+                    alt=""
+                    width="8%"
+                    style="margin-left: 1rem !important; cursor: pointer"
+                  />
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div style="display: inline-block; width: 100%; padding: 40px 0">
-                <ul style="text-align: right; margin: 12px 0; width: 100%">
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >About Us</a
-                    >
+              <div class="footer-links" style="padding: 40px 0">
+                <ul class="link-list" >
+                  <li class="flist" style="display: inline-block; ">
+                    <a style="color: #fff; text-decoration: none;" href="about.html">About Us</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Packages</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="packages.html">Packages</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Showcase</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="showcase.html">Showcase</a>
                   </li>
-                  <li
-                    class="flist"
-                    style="
-                      margin-right: 20px;
-                      position: relative;
-                      display: inline-block;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: #fff;
-                        text-decoration: none;
-                      "
-                      >Contact Us</a
-                    >
+                  <li class="flist">
+                    <a style="color: #fff; text-decoration: none;" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    text-align: center;
-                    float: right;
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    list-style-type: none;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      padding: 0;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
-                      <i
-                        class="fa-solid fa-phone"
-                        style="font-size: 13px; padding-right: 5px"
-                      ></i>
+      
+                <ul class="contact-info">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;"  >
+                      <i class="fa-solid fa-phone"></i>
                       +91 XXXXXXXXXX
                     </a>
                   </li>
                 </ul>
-                <ul
-                  style="
-                    float: right;
-                    display: inline-block;
-                    margin: 12px 0 10px;
-                    width: 73%;
-                    text-align: center;
-                    list-style-type: none;
-                    font-size: 14px;
-                    font-size: 18px;
-                  "
-                >
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+      
+                <ul class="social-links">
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-facebook"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-twitter"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-pinterest"></i>
                     </a>
                   </li>
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
-
-                  <li
-                    style="
-                      float: right;
-                      margin: 0 15px 0 0;
-                      position: relative;
-                      text-align: center;
-                      list-style-type: none;
-                    "
-                  >
-                    <a
-                      href=""
-                      style="
-                        display: block;
-                        padding: 0;
-                        text-align: center;
-                        color: white;
-                        text-decoration: none;
-                      "
-                    >
+                  <li>
+                    <a href="" style="color: #fff; text-decoration: none;">
                       <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
@@ -8111,73 +7293,25 @@
           </div>
         </div>
       </div>
+      
       <div class="footer-botttom" style="background: #222328; padding: 10px 0">
         <div class="container" style="width: 60%">
           <div class="row align-items-center">
             <div class="col-sm-8">
-              <p
-                style="
-                  font-size: 12px;
-                  color: #fff;
-                  margin: 0;
-                  padding: 10px 0;
-                  font-weight: 400;
-                  line-height: 22px;
-                "
-              >
+              <p class="footer-copyright">
                 @ A Logo Design 2025 | All rights reserved
               </p>
             </div>
             <div class="col-sm-4">
-              <ul style="margin: 10px 0; float: right; list-style-type: none">
-                <li
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Terms of Services</a
-                  >
-                </li>
-                <li
-                  class="privacy"
-                  style="
-                    padding-left: 0;
-                    float: left;
-                    padding: 0 12px;
-                    position: relative;
-                    list-style-type: none;
-                  "
-                >
-                  <a
-                    href=""
-                    style="
-                      font-size: 13px;
-                      font-weight: 400;
-                      color: #fff;
-                      text-decoration: none;
-                    "
-                  >
-                    Privacy Policy</a
-                  >
-                </li>
+              <ul class="footer-bottom-links">
+                <li><a href="" style="color: #fff; text-decoration: none;">Terms of Services  |</a></li>
+                <li class="privacy" ><a href="" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="help-button" id="helpButton" data-toggle="modal" data-target="#helpModal">
         <i class="fas fa-question-circle"></i> Help
       </div>
@@ -8217,8 +7351,62 @@
       </div>
     
     </section>
+    <script>
+       $(document).ready(function () {
+        // Select all elements with class 'phone-input'
+        var phoneInputs = document.querySelectorAll('input[type="tel"]');
+        
+        // Loop through all phone inputs and initialize the plugin
+        phoneInputs.forEach(function(input) {
+            window.intlTelInput(input, {
+                initialCountry: "IN", // You can set the default country here
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+            });
+        });
+    });
+    </script>
 
-    <!-- <script src="js/popper.min.js"></script> -->
+<script type="text/javascript">
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
+      $("nav").addClass("scrolled");
+    } else {
+      $("nav").removeClass("scrolled");
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Handle image click event to open modal
+    const images = document.querySelectorAll(".row img");
+    const modalImage = document.getElementById("modalImage");
+    const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+    images.forEach((image) => {
+      image.addEventListener("click", function () {
+       
+        modalImage.src = this.src;
+      
+        $("#imageModal").modal("show");
+      });
+    });
+
+    // Handle fullscreen toggle
+    let isFullscreen = false;
+    fullscreenBtn.addEventListener("click", function () {
+      if (isFullscreen) {
+        document.exitFullscreen();
+        isFullscreen = false;
+      } else {
+        document.querySelector(".modal-dialog").requestFullscreen();
+        isFullscreen = true;
+      }
+    });
+  });
+</script>
+    
+    <script src="js/toggle-click.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
@@ -8228,5 +7416,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
   </body>
 </html>
